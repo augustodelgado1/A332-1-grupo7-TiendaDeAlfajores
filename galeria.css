@@ -1,0 +1,49 @@
+.galeriaContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.galeriaContainer h2 {
+    color: navajowhite;
+}
+
+.producto {
+    display: flex;
+    width: 100%;
+}
+
+.producto img {
+    width: 50%;
+    max-height: 255px;
+    object-fit: cover;
+}
+
+@media screen and (min-width:100px) and (max-width:780px){
+    
+    .producto img {
+        max-height: 400px;
+    }
+}
+
+.descripcion {
+    width: 50%;
+    background-color: black;
+    padding: 20px;
+    
+}
+
+.descripcion h3 {
+    color: burlywood;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Cinzel", serif;
+}
+
+.descripcion p {
+    color: white;
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
+}

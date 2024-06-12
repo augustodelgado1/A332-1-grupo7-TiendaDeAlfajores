@@ -1,0 +1,70 @@
+.borde a{
+    color: white;
+    font-family: "Montagu Slab", Sans-serif; 
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+  
+.borde a:hover {
+    color: black; 
+    border: 2px solid aqua;
+    border-radius: 5px;
+    background-color: aqua;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.nuestrosProductos {
+    background-color: #514e4e;
+    position: relative;
+}
+
+.nuestrasPromociones {
+    background-color:rgb(40, 123, 76) ;
+    /*background-color: rgb(164, 230, 247);*/
+}
+
+.nuevosProductos {
+    background-color: rgb(201, 166, 59);
+    /*background-color: rgb(242, 210, 114);*/
+    padding-top: 0;
+}
+
+header {
+    background-image: url('img/fondo2.jpg');
+    background-size: cover;
+    background-position:center;
+    padding-top: 50px;
+}
