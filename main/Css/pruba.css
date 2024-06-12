@@ -1,0 +1,124 @@
+.conteniner
+{
+    display: flex;
+    width: 880px;
+    
+   
+}
+.conteniner div
+{
+    
+    padding: 10px;
+    
+}
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+}
+
+footer
+{
+    background-color: brown;
+}
+
+footer .renglones
+{
+    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+}
+
+.contenedor
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .links  h4,
+footer .ayuda  h4
+{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+footer .ayuda ul li a 
+{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom:15px;
+    transition: all .3s ease;
+}
+
+
+
+footer .renglones .links ul li a 
+{
+    display: inline-block;
+    
+    width: 60px;
+    
+    margin: 10px 10px;
+    text-align: center;
+    line-height: 50px;
+    
+    color: #ffffff;
+}
+
+.social-link a 
+{
+    display: inline-block;
+    min-height: 40px;
+    width: 60px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 10px 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 200px;
+    color: #ffffff;
+}
+
+.renglones ul li
+{
+   list-style: none;
+   align-items: center;
+}
+
+
+
+
+.renglones ul li  a 
+{
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+    
+    cursor: pointer;
+
+}
+
+
+@media (min-width: 720px)
+{
+    footer .renglones
+    {
+        display: flex;
+        
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 150px;
+    }
+}
