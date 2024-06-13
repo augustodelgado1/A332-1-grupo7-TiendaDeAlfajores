@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
 *
 {
     box-sizing: border-box;
@@ -11,15 +14,21 @@ h2
 
 p
 {
-    font-size: 1.25em;
+    font-size: 1.05em;
 }
+
+
 
 ul{list-style: none;}
 
 body
 {
-    background-color: black;
+    
     margin: 0;  
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
 #nuestros-productos .btn-info
@@ -97,14 +106,19 @@ body
 .alfajores-variados
 {
     background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-    , url('./img/productos/alfajores-variados-.jpg');
+    , url('./img/productos/alfajores-variados.png');
 }
 
 .alfajores-veganos
 {
     background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
-    , url('./img/productos/alfajor-vegano.png');
+    , url('./img/productos/alfajor-de-maicena.jpg');
 }
+
+
+
+
+
 
 @media (min-width: 720px) 
 {
@@ -137,13 +151,13 @@ body
         margin : 5px;
     }
 
-    /* .btn-info
+    .btn-info
     {
         position: absolute;
         bottom: 0;
         left: 100px;
         right: 100px;
-    } */
+    }
 
     
 
@@ -155,10 +169,11 @@ body
     #nuestros-productos ul li 
     {
         position: relative;
-        width: 450px;
-        height: 450px;
+        width: 310px;
+        background-color: black;
+        height: 500px;
         margin: 5px;
-        
+        background-size: 210%;
         background-repeat: no-repeat;
     }
 }
