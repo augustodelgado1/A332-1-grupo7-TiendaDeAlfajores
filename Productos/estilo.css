@@ -1,0 +1,164 @@
+*
+{
+    box-sizing: border-box;
+    
+}
+
+h2
+{
+    font-size: 2.7em;
+}
+
+p
+{
+    font-size: 1.25em;
+}
+
+ul{list-style: none;}
+
+body
+{
+    background-color: black;
+    margin: 0;  
+}
+
+#nuestros-productos .btn-info
+{
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: none ;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 2px 2px 18px rgba(0, 0, 0,0.5);
+}
+
+#nuestros-productos .btn-info:hover
+{
+    background-color: #ffc127;
+   
+}
+
+.contenedor
+{
+    max-width: 1400px;
+    margin: auto;
+}
+
+#nuestros-productos .contenedor
+{
+    text-align: center;
+}
+
+
+
+#nuestros-productos
+{
+    background-color: rgb(30,30,30);
+    color: white;
+} 
+
+
+#nuestros-productos h2 
+{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+
+#nuestros-productos ul li
+{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+   
+}
+
+
+.alfajores-clasico
+{
+    background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    , url('./img/productos/alfajor-negro-relleno-de-dulce-de-leche.jpg');
+}
+
+.linea-mini
+{
+    background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    , url('./img/productos/mini-alfajores-de-chocolate.jpg');
+}
+
+.alfajores-variados
+{
+    background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    , url('./img/productos/alfajores-variados-.jpg');
+}
+
+.alfajores-veganos
+{
+    background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+    , url('./img/productos/alfajor-vegano.png');
+}
+
+@media (min-width: 720px) 
+{
+    #nuestros-productos
+    {
+        background-color: rgb(30,30,30);
+        color: white;
+    } 
+
+
+    #nuestros-productos h2 
+    {
+        margin-top: 0;
+        font-size: 3em;
+    }
+
+
+    #nuestros-productos ul 
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    #nuestros-productos p 
+    {
+        display: block;
+        text-align: center;
+        margin : 5px;
+    }
+
+    /* .btn-info
+    {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+        right: 100px;
+    } */
+
+    
+
+    #nuestros-productos h3
+    {
+        margin-top: 0;
+    }
+
+    #nuestros-productos ul li 
+    {
+        position: relative;
+        width: 450px;
+        height: 450px;
+        margin: 5px;
+        
+        background-repeat: no-repeat;
+    }
+}
