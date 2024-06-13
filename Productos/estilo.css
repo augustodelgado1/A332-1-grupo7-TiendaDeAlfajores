@@ -116,9 +116,10 @@ body
 }
 
 
-table 
+table,td,th
 {
-    border: solid;
+    border: 2px solid black;
+   border-collapse:collapse ;
 }
 
 
