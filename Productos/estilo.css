@@ -109,12 +109,17 @@ body
     , url('./img/productos/alfajores-variados.png');
 }
 
-.alfajores-veganos
+.alfajores-maisena
 {
     background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5))
     , url('./img/productos/alfajor-de-maicena.jpg');
 }
 
+
+table 
+{
+    border: solid;
+}
 
 
 
