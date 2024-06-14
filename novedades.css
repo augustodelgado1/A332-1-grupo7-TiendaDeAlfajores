@@ -16,31 +16,31 @@
 section {
   text-align: center;
   margin: 0;
+  padding: 0;
 }
 
 .container {
-  margin: 50px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0
 }
 
 .container ul {
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .container li {
-  width: 350px;
+  width: 325px;
   border: 2px solid black;
   box-shadow: black 0px 6px 12px -2px;
   border-radius: 10px;
   align-items: center;
   display: inline-flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  margin: 10px;
+  margin: 20px;
 }
 
 .circulo{
@@ -63,9 +63,8 @@ section {
 }
 
 .productosContainer{
-  margin-top: 0;
-  padding-top: 0;
-  margin: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .productosContainer article {

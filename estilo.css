@@ -2,16 +2,15 @@
     color: white;
     font-family: "Montagu Slab", Sans-serif; 
     font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-    border: 2px solid transparent;
+    margin-left: 10px;
+    border: 1px solid transparent;
 }
   
 .borde a:hover {
     color: black; 
-    border: 2px solid aqua;
-    border-radius: 5px;
-    background-color: aqua;
+    border: 1px solid yellow;
+    border-radius: 3px;
+    background-color: yellow;
     text-decoration: none;
     transition: 0.1s;
 }
@@ -19,7 +18,7 @@
 .containerHeader {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .menu ul{
@@ -49,22 +48,37 @@
 .nuestrosProductos {
     background-color: #514e4e;
     position: relative;
+    padding: 0;
+    margin: 0
 }
 
 .nuestrasPromociones {
     background-color:rgb(40, 123, 76) ;
     /*background-color: rgb(164, 230, 247);*/
+    padding: 0;
+    margin: 0;
+}
+
+.titulo{
+    /*text-shadow: 3px 3px 3px #706868;*/
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .nuevosProductos {
     background-color: rgb(201, 166, 59);
     /*background-color: rgb(242, 210, 114);*/
-    padding-top: 0;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     background-image: url('img/fondo2.jpg');
     background-size: cover;
-    background-position:center;
-    padding-top: 50px;
+    background-position: center;
+}
+
+footer{
+    margin-top: 0;
+    padding-top: 0;
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="./novedades.css">
     <link rel="stylesheet" href="./galeria.css">
+    <link rel="stylesheet" href="./nosotros.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Inicio</title>
@@ -13,13 +14,14 @@
 <body>
     <header>
 
+        <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
+        
         <div class="containerHeader">
             <nav class="menu">
                 <ul>
                     <li class="borde"><a href="#inicio" >INICIO</a></li>
                     <li class="borde"><a href="#nosotros" >NOSOTROS</a></li>
                     <li class="borde"><a href="#contacto">CONTACTO</a></li>
-                    <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
                     <li class="borde"><a href="#productos" >PRODUCTOS</a></li>
                     <li class="borde"><a href="#novedades" >NOVEDADES</a></li>
                 </ul>
@@ -30,7 +32,109 @@
     <main>
         <section id="inicio">INICIO</section>
 
-        <section id="nosotros">NOSOTROS</section>
+        <section id="nosotros">
+
+            <div class="fondo">
+                <div class="containerPrincipal">
+                    <div class="contenedor">
+
+                        <h2>NOSOTROS</h2>
+                        <h3>¿QUIENES SOMOS?</h3>
+
+                        <p class="parrafo">
+
+                            Somos una cadena de locales especializadas en alfajores, 
+                            de producción propia y artesanal.
+                        </p>
+
+                        <p class="parrafo">
+
+                            Desde siempre tuvimos claro que no hay objetivo 
+                            más alto que establecer y cuidar, por sobre todo, 
+                            la relación entre nuestra marca y nuestro cliente. 
+                            Es a partir de esta premisa de excelencia que hoy 
+                            hemos decidido ofrecer la calidad y frescura de 
+                            nuestros productos, y la calidez de nuestros servicios 
+                            fuera de la Argentina.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="containerPrincipal">
+    
+                    <div class="columnas">
+    
+                        <img src="img/objetivo.png" alt="Objetivo">
+                        <h3>NUESTRA MISIÓN</h3>
+                    
+                        <p>
+                            Ofrecer alfajores de alta calidad
+                            que capturen el sabor tradicional 
+                            y auténtico del alfajor argentino.
+
+                            Ser la mejor empresa familiar
+                            de productos alimenticios de BS AS.
+                        </p>
+                    </div>
+    
+                    <div class="columnas">
+    
+                        <img src="img/vision.png" alt="Vision">
+                        <h3>NUESTRA VISIÓN</h3>
+                        <p>
+                            Queremos ser una compañía argentina con alcance global, 
+                            reconocida por sus alfajores y productos, y excelencia 
+                            en el servicio de atención de nuestros Locales.
+                        </p>
+                    </div>
+    
+                    <div class="columnas">
+    
+                        <img src="img/valores.png" alt="Valores">
+                        <h3>NUESTROS VALORES</h3>
+                        <p> 
+                            Calidad, Honestidad, 
+                            Responsabilidad,
+                            Creatividad, 
+                            Desafío, Organización y 
+                            Cooperación
+                        </p>
+                    </div>
+                </div>
+
+                <div class="containerPrincipal">
+                    <div class="contenedor">
+
+                        <h3>NUESTROS LOCALES</h3>
+
+                        <p class="parrafo">
+        
+                            Nos enorgullece presentarte un vistazo detrás 
+                            de escena a nuestra fábrica, el corazón de 
+                            nuestra pasión por la calidad y la excelencia. 
+                        </p>
+    
+                        <p class="parrafo">
+    
+                            Situada en un enclave pintoresco, nuestra fábrica 
+                            es mucho más que un centro de producción; es el 
+                            hogar donde nuestros maestros chocolateros y 
+                            pasteleros trabajan incansablemente para crear 
+                            deliciosas delicias que deleitan a los paladares 
+                            de todo el mundo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="containerPrincipal">
+                    <div class="containerIMG">
+
+                        <img src="img/local2.jpg" alt="Local">
+                        <img src="img/proceso.webp" alt="Trabajo">
+                    </div>
+                </div>
+            </div>
+        </section>
     
         <section id="productos" class="nuestrosProductos">
 
@@ -87,17 +191,15 @@
                     <img src="img/dulce.jpg" alt="Dulce De Leche">
                 </div>
             </div>
-
-
         </section>
     
         <section id="contacto">CONTACTO</section>
     
         <section id="novedades">
 
-            <section class="nuestrasPromociones">
+            <div class="nuestrasPromociones">
 
-                <h2>Nuestras Promociones!</h2>
+                <h2 class="titulo">Nuestras Promociones!</h2>
         
                 <div class="container animate__animated animate__backInRight">
 
@@ -146,11 +248,11 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
 
-            <section class="nuevosProductos">
+            <div class="nuevosProductos">
 
-                <h2>Nuevos Productos!</h2>
+                <h2 class="titulo">Nuevos Productos!</h2>
                 <div class="productosContainer animate__animated animate__backInRight">
                   
                     <article>
@@ -185,7 +287,7 @@
                       </p>
                     </article>
                 </div>
-            </section>
+            </div>
         </section>
     </main>
 

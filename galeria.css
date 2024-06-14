@@ -8,6 +8,8 @@
 
 .galeriaContainer h2 {
     color: navajowhite;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
 }
 
 .producto {
@@ -32,7 +34,6 @@
     width: 50%;
     background-color: black;
     padding: 20px;
-    
 }
 
 .descripcion h3 {
@@ -40,6 +41,7 @@
     font-size: 40px;
     margin-bottom: 30px;
     font-family: "Cinzel", serif;
+    font-weight: bold;
 }
 
 .descripcion p {
