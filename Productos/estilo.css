@@ -80,7 +80,7 @@ body
 }
 
 
-#nuestros-productos ul li
+#nuestros-productos .contenedor-de-productos  article
 {
     background-position: center center;
     background-size: cover;
@@ -116,11 +116,20 @@ body
 }
 
 
-table,td,th
+.barraDespegable 
 {
-    border: 2px solid black;
-   border-collapse:collapse ;
+    justify-content: start;
+    align-items: start;
 }
+
+/* article header h2 , 
+article section h2
+{
+    text-align: center;
+
+} */
+
+
 
 
 
@@ -142,7 +151,7 @@ table,td,th
     }
 
 
-    #nuestros-productos ul 
+    #nuestros-productos .contenedor-de-productos  
     {
         display: flex;
         justify-content: center;
@@ -172,7 +181,7 @@ table,td,th
         margin-top: 0;
     }
 
-    #nuestros-productos ul li 
+    #nuestros-productos .contenedor-de-productos article 
     {
         position: relative;
         width: 310px;
@@ -182,4 +191,12 @@ table,td,th
         background-size: 210%;
         background-repeat: no-repeat;
     }
+
+    
+    /* article section h2
+    {
+        text-align: left;
+
+    } */
+
 }
