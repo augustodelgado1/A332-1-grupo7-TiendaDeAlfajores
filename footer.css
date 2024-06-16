@@ -1,0 +1,55 @@
+footer{
+    background-color: rgb(104, 90, 73);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer{
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+footer h3{
+    color: #d8a96e;
+    margin-bottom: 10px;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.containerFooter .menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.containerFooter .social ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerFooter .social ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.containerFooter .mapa iframe {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-top: 10px;
+    border: 0;
+}
