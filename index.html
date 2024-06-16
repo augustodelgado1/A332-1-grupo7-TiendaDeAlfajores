@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./galeria.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" media="all" href="button.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="contacto.css" />
     <title>Inicio</title>
 </head>
 
@@ -95,15 +96,13 @@
 
         </section>
 
-        <section id="contacto">CONTACTO</section>
-
         <section id="novedades">
 
             <section class="nuestrasPromociones">
 
                 <h2>Nuestras Promociones!</h2>
 
-                <div class="container "><!--animate__animated animate__backInRight -->
+                <div class="container"><!--animate__animated animate__backInRight -->
 
                     <ul>
                         <li>
@@ -116,9 +115,10 @@
                             </div>
 
                             <div class="seccionImagen">
-                                <div class="circulo">
+                                <!-- <div class="circulo">
                                     <a href="#novedades"> <img src="./img/20Descuento.png" alt="Galletitas"></a>
-                                </div>
+                                </div> -->
+                                <a href="#novedades"> <img src="./img/20Descuento.png" alt="Galletitas"></a>
                             </div>
 
                             <div class="piePromo">
@@ -145,9 +145,10 @@
                             </div>
 
                             <div class="seccionImagen">
-                                <div class="circulo">
+                                <!-- <div class="circulo">
                                     <a href="#novedades"> <img src="./img/oferta.png" alt="Galletitas"></a>
-                                </div>
+                                </div> -->
+                                <a href="#novedades"> <img src="./img/oferta.png" alt="Galletitas"></a>
                             </div>
 
                             <div class="piePromo">
@@ -174,9 +175,10 @@
                             </div>
 
                             <div class="seccionImagen">
-                                <div class="circulo">
+                                <!-- <div class="circulo">
                                     <a href="#novedades"> <img src="./img/combo.png" alt="Combo"></a>
-                                </div>
+                                </div> -->
+                                <a href="#novedades"> <img src="./img/combo.png" alt="Combo"></a>
                             </div>
 
                             <div class="piePromo">
@@ -198,42 +200,57 @@
 
             <section class="nuevosProductos">
 
-                <h2>Nuevos Productos!</h2>
-                <div class="productosContainer animate__animated animate__backInRight">
+                <h2>Proximas novedades!</h2>
+                <div class="productosContainer">
 
-                    <article>
+                    <article class="proxNovedades">
 
-                        <div id="tituloPromo">
+                        <div class="tituloPromo">
                             <p>¡ Nueva Pasta Frola !</p>
                         </div>
 
                         <img src="./img/pastaFrola.png" alt="Nuevo Producto Pasta Frola" />
 
-                        <p class="texto">
+                        <p class="piePromo">
                             Se dice que hay dulces que 'entran por los ojos', es el caso de la pasta frola,
                             que parece salida del cuento de ‘Caperucita Roja’. El relleno de esta
                             tarta suele ser de dulce de membrillo, batata o dulce de leche y esta
-                            decorada con tiras de masa. ¡Te conquistará su sabor!.
+                            decorada con tiras de masa. <br>¡Te conquistará su sabor!
                         </p>
                     </article>
 
-                    <article>
+                    <article class="proxNovedades">
 
-                        <div id="tituloPromo">
+                        <div class="tituloPromo">
                             <p>¡ Nuevo Pan Dulce Artesanal !</p>
                         </div>
 
                         <img src="./img/panDulce2.png" alt="Nuevo Producto Pan Dulce" />
 
-                        <p class="texto">
+                        <p class="piePromo">
                             Un clásico ideal para cualquier época del año! Suaves y esponjosos
                             rellenos con Frutos Secos (almendras, Avellanas y
-                            Nueces), Frutas Abrillantadas, cerezas y quinotos.
+                            Nueces), Frutas Abrillantadas, cerezas y quinotos.<br>
                             ¡Una delicia que no podrás resistir!
                         </p>
                     </article>
                 </div>
             </section>
+        </section>
+
+        <section id="contacto">
+
+            <form>
+                <h2>Contactanos</h2>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="telefono" placeholder="Telefono" required>
+                <h5>Escribe tu mensaje</h5>
+                <textarea required></textarea>
+                <input type="submit" value="Enviar" id = "button">
+            </form>
+
         </section>
     </main>
 

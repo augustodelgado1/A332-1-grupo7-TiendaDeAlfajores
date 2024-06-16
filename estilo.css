@@ -1,3 +1,4 @@
+
 .borde a{
     color: white;
     font-family: "Montagu Slab", Sans-serif; 
@@ -52,14 +53,14 @@
 }
 
 .nuestrasPromociones {
-    background-color:#997A56 ;
+    background-image: linear-gradient(#523B29,#997A56);
     position: relative;
     width: 100%;
     padding: 10px;
 }
 
 .nuevosProductos {
-    background-color: rgb(201, 166, 59);
+    background-image: linear-gradient(#997A56,#523B29);
     /*background-color: rgb(242, 210, 114);*/
     padding-top: 0;
 }
