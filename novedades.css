@@ -1,0 +1,116 @@
+.tituloPromo {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cinzel", serif;
+  width: 100%;
+}
+
+.texto {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Cinzel", serif;
+}
+
+section {
+  text-align: center;
+  margin: 0;
+}
+
+.container ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container li {
+  background-color: #89654B;
+  width: 350px;
+  border: 2px solid black;
+  box-shadow: black 0px 6px 12px -2px;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.circulo {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: black 0px 6px 12px -2px;
+  background-color: rgb(242, 210, 114);
+}
+
+.circulo img {
+  width: 300px;
+  max-height: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seccionImagen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.piePromo {
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.productosContainer {
+  margin-top: 0;
+  padding-top: 0;
+  margin: 20px;
+}
+
+
+.productosContainer article {
+  padding: 0;
+  justify-content: space-evenly;
+  background-color: lightpink;
+}
+
+.productosContainer article {
+  width: 380px;
+  border: 2px solid black;
+  box-shadow: black 0px 6px 12px -2px;
+  margin: 20px;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  display: inline-flex;
+  transition: 0.3s;
+}
+
+.productosContainer article:hover {
+  box-shadow: black 0px 6px 12px -2px;
+  border-color: rgb(164, 230, 247);
+  transition: 0.2s;
+}
+
+.productosContainer .texto {
+  text-align: center;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.productosContainer img {
+  width: 250px;
+  max-height: 380px;
+}
