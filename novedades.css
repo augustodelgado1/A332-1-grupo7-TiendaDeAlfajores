@@ -21,7 +21,8 @@ section {
 
 .container {
   padding: 0;
-  margin: 0
+  margin: 0;
+  animation: pulse 1.5s linear 1s infinite;
 }
 
 .container ul {
@@ -65,6 +66,7 @@ section {
 .productosContainer{
   padding: 0;
   margin: 0;
+  animation: pulse 1.5s linear 1s infinite;
 }
 
 .productosContainer article {

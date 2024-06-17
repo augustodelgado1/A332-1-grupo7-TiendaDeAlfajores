@@ -48,15 +48,12 @@
 .nuestrosProductos {
     background-color: #514e4e;
     position: relative;
-    padding: 0;
-    margin: 0
 }
 
 .nuestrasPromociones {
     background-color:rgb(40, 123, 76) ;
     /*background-color: rgb(164, 230, 247);*/
-    padding: 0;
-    margin: 0;
+    padding-bottom: 20px;
 }
 
 .titulo{
@@ -68,8 +65,7 @@
 .nuevosProductos {
     background-color: rgb(201, 166, 59);
     /*background-color: rgb(242, 210, 114);*/
-    padding: 0;
-    margin: 0;
+    padding-bottom: 20px;
 }
 
 header {
