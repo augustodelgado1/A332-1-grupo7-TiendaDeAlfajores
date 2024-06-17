@@ -9,10 +9,9 @@ body
     font-style: normal;
 }
 
-header
+.cabecera
 {
     background-color: #633500;
-    
 }
 
 header .logo
@@ -23,7 +22,6 @@ header .logo
     font-size: 1.45em;
     text-align: center;
     color: white;
-    
 }
 
 
