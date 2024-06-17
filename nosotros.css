@@ -10,12 +10,12 @@
     flex-wrap: wrap;
 }
 
-.contenedor {
+.contenedorNosotros {
     max-width: 750px;
     margin-bottom: 20px;
 }
 
-.contenedor h2{
+.contenedorNosotros h2{
     color: navajowhite;
     font-size: 40px;
     font-family: "Sofia", Sans-serif;
@@ -23,7 +23,7 @@
     font-weight: bold;
 }
 
-.contenedor p{
+.contenedorNosotros p{
     color: #ffffff;
     font-size: 25px;
     font-family: "Poppins", sans-serif;

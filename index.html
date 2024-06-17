@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="./novedades.css">
     <link rel="stylesheet" href="./galeria.css">
-    <link rel="stylesheet" href="./nosotros.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="productos.css" />
+    <link rel="stylesheet" href="nosotros.css" />
     <title>Inicio</title>
 </head>
+
 <body>
     <header>
 
@@ -30,13 +36,105 @@
     </header>
 
     <main>
-        <section id="inicio">INICIO</section>
+        <section id="nuestros-productos">
+            <div class="contenedor">
+                <h2>Nuestros Productos</h2>
+
+                <div class="contenedor-de-productos">
+                    <article class="alfajores-chocolate" title="alfajor de Chocolate">
+
+                        <h3>Alfajor De Chocolate</h3>
+
+                        <p>
+                            Nuestros alfajores están rellenos de un suave y cremoso dulce de leche, envueltos en una
+                            delicada capa de chocolate o espolvoreados con azúcar impalpable.
+                            Perfectos para acompañar tu café
+                        </p>
+
+
+                        <a href="./alfajores-chocolate.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                + Info
+                            </button>
+                        </a>
+                    </article>
+
+                    <article class="alfajor-blanco" title="alfajor Blanco">
+
+                        <h3>Alfajor Blanco</h3>
+
+                        <p>Un alfajor de chocolate blanco relleno de dulce de leche
+                            consiste en dos galletas suaves con un cremoso relleno de
+                            dulce de leche, todo cubierto por una capa de chocolate blanco.
+                            Es una deliciosa combinación de texturas y sabores dulces.
+                        </p>
+
+
+                        <a href="./alfajores-blanco.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                + Info
+                            </button>
+                        </a>
+                    </article>
+
+                    <article class="alfajor-fruta" title="alfajores De Fruta">
+
+                        <h3>Alfajor De Fruta</h3>
+
+                        <p>Descubre la magia de un alfajor de fruta, donde dos galletas suaves abrazan un corazón de
+                            mermelada de frutas frescas. Cada bocado, bañado en un delicado glasé, es una sinfonía de
+                            sabores que deleita el paladar y transporta a un paraíso dulce y afrutado.
+                        </p>
+
+
+                        <a href="./alfajores-fruta.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                + Info
+                            </button>
+                        </a>
+                    </article>
+
+                    <article class="alfajor-maisena" title="alfajor de maisena">
+
+                        <h3>Alfajor De Maicena</h3>
+
+                        <p>Descubre el alfajor de maicena, con su suave relleno de dulce de leche y cobertura de coco
+                            rallado. Una delicia tradicional que combina texturas y sabores en cada mordisco.
+                        </p>
+
+
+                        <a href="./alfajores-maisena.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                + Info
+                            </button>
+                        </a>
+                    </article>
+
+                    <article class="alfajor-vegano" title="Alfajor Vegano">
+
+                        <h3>Alfajor Vegano</h3>
+
+                        <p>Prueba nuestro alfajor vegano, elaborado con ingredientes 100% de origen vegetal. Relleno de
+                            dulce de leche de coco y cubierto con chocolate vegano, cada bocado es una explosión de
+                            sabor natural y conciencia ecológica.
+                        </p>
+
+
+                        <a href="./alfajores-maisena.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                + Info
+                            </button>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <section id="nosotros">
 
             <div class="fondo">
                 <div class="containerPrincipal">
-                    <div class="contenedor">
+                    <div class="contenedorNosotros">
 
                         <h2>NOSOTROS</h2>
                         <h3>¿QUIENES SOMOS?</h3>
@@ -103,7 +201,7 @@
                 </div>
 
                 <div class="containerPrincipal">
-                    <div class="contenedor">
+                    <div class="contenedorNosotros">
 
                         <h3>NUESTROS LOCALES</h3>
 
@@ -135,164 +233,201 @@
                 </div>
             </div>
         </section>
-    
-        <section id="productos" class="nuestrosProductos">
 
-            <div class="galeriaContainer">
-
-                <h2>Productos</h2>
-
-                <div class="producto">
-
-                    <div class="descripcion">
-                        <h3>Alfajores Clasicos Artesanales</h3>
-                        <p>Cubiertos con chocolate semi amargo, chocolate con leche o con chocolate blanco.</p>
-                    </div>
-                    <img src="img/fondo2.jpg" alt="Alfajores Tradicionales">
-                </div>
-
-                <div class="producto">
-
-                    <div class="descripcion">
-                        <h3>Alfajores de Maicena Grandes</h3>
-                        <p>Galletas muy tiernas rellenas de dulce de leche recubierto de coco rallado. </p>
-                        <p>Una delicia a la que pocos podrán resistirse.</p>
-                    </div>
-                    <img src="img/grandes.jpg" alt="Alfajores Grandes">
-                </div>
-
-                <div class="producto">
-
-                    <div class="descripcion">
-                        <h3>Alfajores de Maicena Sabor Chocolate</h3>
-                        <p>Chocolate o Dulce de Leche? pruebalos ambos.</p>
-                        <p>El momento de dulzura de  tu dia.</p>
-                    </div>
-                    <img src="img/chocolate.jpg" alt="Alfajores De Chocolate">
-                </div>
-
-                <div class="producto">
-
-                    <div class="descripcion">
-                        <h3>Alfajores de Maicena Pequeños</h3>
-                        <p>Mismo sabor y textura que los grandes pero mas ideales</p>
-                        <p> para acompañar unos buenos mates en familia.</p>
-                    </div>
-                    <img src="img/oferta.jpg" alt="Alfajores Pequeños">
-                </div>
-
-                <div class="producto">
-
-                    <div class="descripcion">
-                        <h3>Dulce de Leche Artesanal</h3>
-                        <p>Elaborado con la leche recién ordeñada de nuestras vacas</p> 
-                        <p>Es de color caramelo y su sabor es exquisito para acompañar con lo que quieras.</p>
-                    </div>
-                    <img src="img/dulce.jpg" alt="Dulce De Leche">
-                </div>
-            </div>
-        </section>
-    
-        <section id="contacto">CONTACTO</section>
-    
         <section id="novedades">
 
-            <div class="nuestrasPromociones">
+            <section class="nuestrasPromociones">
 
-                <h2 class="titulo">Nuestras Promociones!</h2>
-        
+                <h2>Nuestras Promociones!</h2>
+
                 <div class="container">
 
                     <ul>
                         <li>
-                            <div id="tituloPromo">
+                            <div class="tituloPromo">
 
-                                <p>¡ Pack 15% de Descuento !</p>
-                                <p>Llevando 2 Unidades</p>
+                                <h3>¡ Pack 15% de Descuento !</h3>
+                                <h4>Llevando 2 unidades o mas!</h4>
+                                <br>
+                                <p class="texto">Llevate nuestro mejores alfajores artesanales.</p>
                             </div>
-                            <p class="texto">15% de Descuento Llevando 2 o mas Cajas</p>
 
-                            <div class="circulo">
+                            <div class="seccionImagen">
+                                <!-- <div class="circulo">
+                                    <a href="#novedades"> <img src="./img/20Descuento.png" alt="Galletitas"></a>
+                                </div> -->
                                 <a href="#novedades"> <img src="./img/20Descuento.png" alt="Galletitas"></a>
                             </div>
-                            <br>
-                            <p class="texto">Valido Hasta el <time datetime="2024-06-22">22 de junio de 2024</time>.</p>
-                        </li>
-                            
-                        <li>
-                            <div id="tituloPromo">
-                                <p>¡ 3x2 en Alfajores Chiquitos !</p>
-                                <p>Pagando 2 te llevas 3!!!</p>
-                            </div>
-                            <p class="texto">Pagas 2 Unidades y te Llevas 3 Docenas en Alfajores Chiquitos</p>
 
-                            <div class="circulo">
+                            <div class="piePromo">
+                                <p class="texto">Valido Hasta el <time datetime="2024-06-22">22 de junio de 2024</time>.
+                                </p>
+
+                                <button class="agregarCarrito">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tituloPromo">
+
+                                <h3>¡ 3x2 en Alfajores Chiquitos !</h3>
+                                <h4>Pagando 2 te llevas 3!!!</h4>
+                                <br>
+                                <p class="texto">Pagas 2 Unidades y te Llevas 3 Docenas en Alfajores Chiquitos</p>
+                            </div>
+
+                            <div class="seccionImagen">
+                                <!-- <div class="circulo">
+                                    <a href="#novedades"> <img src="./img/oferta.png" alt="Galletitas"></a>
+                                </div> -->
                                 <a href="#novedades"> <img src="./img/oferta.png" alt="Galletitas"></a>
                             </div>
-                            <br>
-                            <p class="texto">Valido Hasta el <time datetime="2024-05-22">15 de junio de 2024</time>.</p>
-                        </li>
-    
-                        <li>
-                            <div id="tituloPromo">
-                                <p>¡ Pack 20% de Descuento ! </p>
-                                <p>Alfajores negros + Dulce de leche + Galletas</p>
-                            </div>
-                            <p class="texto">20% de Descuento Llevando los siguientes productos:</p>
 
-                            <div class="circulo">
+                            <div class="piePromo">
+                                <p class="texto">Valido Hasta el <time datetime="2024-05-22">15 de junio de 2024</time>.
+                                </p>
+
+                                <button class="agregarCarrito">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tituloPromo">
+
+                                <h3>¡ Pack 20% de Descuento ! </h3>
+                                <h4>Alfajores negros + Dulce de leche + Galletas</h4>
+                                <br>
+                                <p class="texto">20% de Descuento Llevando los siguientes productos:</p>
+                            </div>
+
+                            <div class="seccionImagen">
+                                <!-- <div class="circulo">
+                                    <a href="#novedades"> <img src="./img/combo.png" alt="Combo"></a>
+                                </div> -->
                                 <a href="#novedades"> <img src="./img/combo.png" alt="Combo"></a>
                             </div>
-                            <br>
-                            <p class="texto">Valido Hasta el <time datetime="2024-05-15">31 de junio de 2024</time>.</p>
+
+                            <div class="piePromo">
+                                <p class="texto">Valido Hasta el <time datetime="2024-05-15">31 de junio de 2024</time>.
+                                </p>
+
+                                <button class="agregarCarrito">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Agregar al carrito
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
-            <div class="nuevosProductos">
+            <section class="nuevosProductos">
 
-                <h2 class="titulo">Nuevos Productos!</h2>
+                <h2>Proximas novedades!</h2>
                 <div class="productosContainer">
-                  
-                    <article>
 
-                      <div id="tituloPromo">
-                        <p>¡ Nueva Pasta Frola !</p>
-                      </div>
+                    <article class="proxNovedades">
 
-                      <img src="./img/pastaFrola.png" alt="Nuevo Producto Pasta Frola"/>
-                      
-                      <p class="texto">
-                        Se dice que hay dulces que 'entran por los ojos', es el caso de la pasta frola, 
-                        que parece salida del cuento de ‘Caperucita Roja’. El relleno de esta 
-                        tarta suele ser de dulce de membrillo, batata o dulce de leche y esta
-                        decorada con tiras de masa. ¡Te conquistará su sabor!.
-                      </p>
+                        <div class="tituloPromo">
+                            <p>¡ Nueva Pasta Frola !</p>
+                        </div>
+
+                        <img src="./img/pastaFrola.png" alt="Nuevo Producto Pasta Frola" />
+
+                        <p class="piePromo">
+                            Se dice que hay dulces que 'entran por los ojos', es el caso de la pasta frola,
+                            que parece salida del cuento de ‘Caperucita Roja’. El relleno de esta
+                            tarta suele ser de dulce de membrillo, batata o dulce de leche y esta
+                            decorada con tiras de masa. <br>¡Te conquistará su sabor!
+                        </p>
                     </article>
-                  
-                    <article>
 
-                      <div id="tituloPromo">
-                        <p>¡ Nuevo Pan Dulce Artesanal !</p>
-                      </div>
+                    <article class="proxNovedades">
 
-                      <img src="./img/panDulce2.png" alt="Nuevo Producto Pan Dulce"/>
+                        <div class="tituloPromo">
+                            <p>¡ Nuevo Pan Dulce Artesanal !</p>
+                        </div>
 
-                      <p class="texto">
-                        Un clásico ideal para cualquier época del año! Suaves y esponjosos 
-                        rellenos con Frutos Secos (almendras, Avellanas y 
-                        Nueces), Frutas Abrillantadas, cerezas y quinotos.
-                        ¡Una delicia que no podrás resistir!
-                      </p>
+                        <img src="./img/panDulce2.png" alt="Nuevo Producto Pan Dulce" />
+
+                        <p class="piePromo">
+                            Un clásico ideal para cualquier época del año! Suaves y esponjosos
+                            rellenos con Frutos Secos (almendras, Avellanas y
+                            Nueces), Frutas Abrillantadas, cerezas y quinotos.<br>
+                            ¡Una delicia que no podrás resistir!
+                        </p>
                     </article>
                 </div>
-            </div>
+            </section>
+        </section>
+
+        <section id="contacto">
+
+            <form>
+                <h2>Contactanos</h2>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="telefono" placeholder="Telefono" required>
+                <h5>Escribe tu mensaje</h5>
+                <textarea required></textarea>
+                <input type="submit" value="Enviar" id="button">
+            </form>
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-4">
-        <!-- Footer de la página -->
+    <footer>
+        <div class="containerFooter">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+
+            <div class="menu">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#inicio">Productos</a></li>
+                    <li><a href="#inicio">Nosotros</a></li>
+                    <li><a href="#inicio">Novedades</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h3>REDES</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank"> <img src="./img/logos/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/logos/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.tiktok.com/" target="_blank"><img src="./img/logos/tiktok.png" alt="TikTok"></a></li>
+                    <li><a href="https://www.whatsapp.com/" target="_blank"><img src="./img/logos/whatsapp.png" alt="Whatsapp"></a></li>
+                </ul>
+            </div>
+
+            <div class="mapa">
+                <H3>UBICACION</H3>
+                <p>Av. Bartolomé Mitre 750</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7010899865736!2d-58.36706772352862!3d-34.662251060593206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3333416c85145%3A0x20226ada1b9fc4b2!2sUTN%20avellaneda!5e0!3m2!1ses!2sar!4v1718570679670!5m2!1ses!2sar"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>
