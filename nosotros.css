@@ -1,0 +1,61 @@
+.fondo{
+    background-image: url("img/pueba2.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.containerPrincipal{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedorNosotros {
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+.contenedorNosotros h2{
+    color: navajowhite;
+    font-size: 40px;
+    font-family: "Sofia", Sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+}
+
+.contenedorNosotros p{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    display: block;
+}
+
+.containerIMG{
+    width: 100%;
+}
+
+.containerIMG img{
+    max-width: 100%;
+}
+
+.parrafo {
+    color: #ffffff;
+    font-size: 3vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.columnas{
+    width: 300px;
+    padding-top: 10px;
+}
+
+h3{
+    color: rgb(193, 179, 179);
+    font-weight: bold;
+}
+
+.columnas p{
+    color: white;
+}
