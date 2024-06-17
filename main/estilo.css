@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.borde a {
+    color: var(--letrasContraste1);
+    font-family: "Montagu Slab", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.borde a:hover {
+    color: var(--letrasContraste1);
+    border: 1px solid var(--color-contraste7);
+    border-radius: 5px;
+    background-color: var(--color-contraste7);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--letrasContraste1);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.nuestrosProductos {
+    background-color: #514e4e;
+    position: relative;
+}
+
+.nuestrasPromociones {
+    background-image: url("img/pueba2.jpg");
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0;
+    /* Ajuste para eliminar margen inferior */
+}
+
+.nuevosProductos {
+    background-image: linear-gradient(#997A56, #523B29);
+    /*background-color: rgb(242, 210, 114);*/
+
+}
+
+header {
+    background-image: url('img/fondo2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+}
+
+.botones{
+    width: 100%;
+    height: 30px;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+    
+}
+.fa fa-shopping-cart{
+    width: 20px;
+    height: 20px;
+}
+.spanIcono{
+    font-size: 30px; 
+    color: var(--letrasContraste5);
+}
+
+@media (max-width:800px){
+    .menu ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .logoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+:root {
+    --fondo-contraste1: #997A56;
+    --color-contraste2: navajowhite;
+    --color-contraste3: rgb(104, 90, 73);
+    --color-contraste4: #523B29;
+    --colorContraste5: #514e4e;
+    --color-contraste6: #EB6E3F;
+    --color-contraste7: #C74B38;
+    --color-contraste8: #8D4429;
+    --letrasContraste1: white;
+    --letrasContraste2: black;
+    --letrasContraste3: rgb(193, 179, 179);
+    --letrasContraste4: navajowhite;
+    --letrasContraste5: #EB6E3F;
+    --no-white: white;
+    --content-white: rgba(0,0,0,.87);
+}

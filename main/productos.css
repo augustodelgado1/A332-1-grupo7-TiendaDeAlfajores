@@ -52,25 +52,25 @@ body {
     text-align: center;
 }
 
-
-
 #nuestros-productos {
+    padding: 10px;
     background-color: rgb(30, 30, 30);
-    color: white;
+    color: var(--letrasContraste4);
 }
 
+#nuestros-productos p{
+    color: var(--letrasContraste1);
+}
 
 #nuestros-productos h2 {
     margin-top: 0;
     font-size: 3em;
 }
 
-
 #nuestros-productos .contenedor-de-productos article {
     background-position: center center;
     background-size: cover;
     padding: 50px;
-    margin: 20px;
     border-radius: 15px;
 }
 
@@ -102,7 +102,6 @@ body {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-de-fruta.webp');
 }
 
-
 .barraDespegable {
     justify-content: start;
     align-items: start;
@@ -111,7 +110,6 @@ body {
 article h2 {
     text-align: center;
 }
-
 
 article .contenedor-de-botones {
     display: block;
@@ -137,15 +135,12 @@ article .precio {
 @media (min-width: 720px) {
     #nuestros-productos {
         background-color: rgb(30, 30, 30);
-        color: white;
     }
-
 
     #nuestros-productos h2 {
         margin-top: 0;
         font-size: 3em;
     }
-
 
     #nuestros-productos .contenedor-de-productos {
         display: flex;
@@ -166,8 +161,6 @@ article .precio {
         left: 100px;
         right: 100px;
     }
-
-
 
     #nuestros-productos h3 {
         margin-top: 0;
@@ -196,13 +189,9 @@ article .precio {
     article header img {
         width: 450px;
         height: 100%;
-
     }
 
     article .informacion {
-
-
-
         width: 100%;
         height: 100%;
     }
@@ -210,21 +199,16 @@ article .precio {
     article .adicional {
         color: rgb(5, 0, 0);
         display: flex;
-
         width: auto;
         height: auto;
     }
 
-
-
     article .texto {
         padding: 20px;
-
     }
 
     article section h2 {
         text-align: left;
-
     }
 
     article .contenedor-de-botones {
@@ -236,17 +220,12 @@ article .precio {
         display: block;
         text-align: end;
         justify-content: end;
-
-
-
     }
 
     article .contenedor-de-botones li {
         padding-right: 30px;
         padding: 10px;
     }
-
-
 
     /* 
     article .informacion  
@@ -269,5 +248,4 @@ article .precio {
         text-align: left;
 
     } */
-
 }
