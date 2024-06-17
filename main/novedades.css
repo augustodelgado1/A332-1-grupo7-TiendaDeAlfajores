@@ -22,6 +22,8 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
+  margin: 0; /* Ajuste para asegurar que no haya margen externo */
+  padding: 0; /* Ajuste para asegurar que no haya padding externo */
 }
 
 .container li {
@@ -37,6 +39,7 @@ section {
   justify-content: space-between;
   margin: 10px;
   height: auto;
+  margin-bottom: 0;
 }
 
 .container li:hover {
@@ -59,10 +62,11 @@ section {
 }
 
 .productosContainer {
-  margin-top: 0;
-  padding-top: 0;
-  margin: 20px;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .productosContainer article {
@@ -90,7 +94,8 @@ section {
 }
 
 #novedades h2 {
-  color: #997A56;
+  padding-top: 30px;
+  color: white;
   text-decoration: underline;
 }
 
