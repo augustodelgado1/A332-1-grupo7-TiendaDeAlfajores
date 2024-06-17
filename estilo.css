@@ -15,9 +15,9 @@
   
 .borde a:hover {
     color: black; 
-    border: 2px solid aqua;
+    border: 1px solid yellow;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: yellow;
     text-decoration: none;
     transition: 0.1s;
 }
