@@ -5,11 +5,12 @@
     justify-content: center;
     align-items: center;
     background: url("./img/fondoContacto.jpg") no-repeat center/cover;
+    flex-wrap: wrap;
 }
 
 #contacto form{
-    width: 670px;
-    height: 600px;
+    width: 90%;
+    max-width: 670px;
     display: flex;
     justify-content: center;
     border-radius: 15px;
@@ -29,16 +30,13 @@
 
 #contacto form input{
     width: 300px;
-    height: 50px;
-    display: flex;
     padding-left: 10px;
-    outline: none;
-    border: none;
     font-size: 20px;
     margin-bottom: 10px;
+    outline: none;
+    border: none;
     background: none;
     border-bottom: 2px solid #fff;
-    color: #fff;
 }
 
 #contacto form input::placeholder{
@@ -53,9 +51,11 @@
 #contacto form h5{
     color: #fff;
     font-weight: 300;
-    width: 600px;
+    width: 90%; /* Utiliza porcentaje para adaptarse al ancho de la pantalla */
+    max-width: 600px; /* Ancho máximo del texto */
     margin-top: 20px;
     font-size: 20px;
+    text-align: center;
 }
 
 #contacto form textarea{
@@ -67,10 +67,8 @@
     font-size: 20px;
     padding: 10px;
     outline: none;
-    min-height: 90px;
-    max-height: 90px;
-    min-width: 620px;
-    max-width: 620px;
+    min-width: 90%;
+    max-width: 95%;
 }
 
 #contacto form #button {
