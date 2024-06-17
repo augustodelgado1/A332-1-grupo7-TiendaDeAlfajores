@@ -1,20 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
-.borde a{
+.borde a {
     color: white;
-    font-family: "Montagu Slab", Sans-serif; 
+    font-family: "Montagu Slab", Sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-decoration: none;
     border: 2px solid transparent;
 }
-  
+
 .borde a:hover {
-    color: black; 
+    color: black;
     border: 1px solid yellow;
     border-radius: 5px;
     background-color: yellow;
@@ -28,7 +28,7 @@
     padding: 10px;
 }
 
-.menu ul{
+.menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -58,21 +58,23 @@
 }
 
 .nuestrasPromociones {
-    background-image: linear-gradient(#523B29,#997A56);
+    background-image: linear-gradient(#523B29, #997A56);
     position: relative;
     width: 100%;
     padding: 10px;
-    margin-bottom: 0; /* Ajuste para eliminar margen inferior */
+    margin-bottom: 0;
+    /* Ajuste para eliminar margen inferior */
 }
 
 .nuevosProductos {
-    background-image: linear-gradient(#997A56,#523B29);
+    background-image: linear-gradient(#997A56, #523B29);
     /*background-color: rgb(242, 210, 114);*/
+
 }
 
 header {
     background-image: url('img/fondo2.jpg');
     background-size: cover;
-    background-position:center;
+    background-position: center;
     padding-top: 50px;
 }
