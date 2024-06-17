@@ -53,8 +53,13 @@ body {
 }
 
 #nuestros-productos {
+    padding: 10px;
     background-color: rgb(30, 30, 30);
-    color: white;
+    color: var(--letrasContraste4);
+}
+
+#nuestros-productos p{
+    color: var(--letrasContraste1);
 }
 
 #nuestros-productos h2 {
@@ -130,7 +135,6 @@ article .precio {
 @media (min-width: 720px) {
     #nuestros-productos {
         background-color: rgb(30, 30, 30);
-        color: white;
     }
 
     #nuestros-productos h2 {
