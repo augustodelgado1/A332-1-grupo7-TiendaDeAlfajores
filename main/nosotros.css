@@ -52,7 +52,7 @@
 }
 
 h3{
-    color: rgb(193, 179, 179);
+    color: var(--letrasContraste5);
     font-weight: bold;
 }
 
