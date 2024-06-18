@@ -29,7 +29,7 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    background-color: black;
+    background-color: #ffc127;
     color: white;
     border-radius: 7px;
     font-size: 18px;
@@ -40,7 +40,7 @@ body {
 }
 
 #nuestros-productos .btn-info:hover {
-    background-color: #ffc127;
+    background-color: red;
 }
 
 .contenedor {

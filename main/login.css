@@ -1,28 +1,36 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
-body
-{
-    background-color: #f2f2f2;
-    
+#containerLogin{
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/promocionesFondo.jpg") no-repeat center/cover;
+    flex-wrap: wrap;
 }
 
 .login 
-{    
+{
     text-align: center;
     margin: 20px auto;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 20px;
     border-radius:5px;
-    background-color: aquamarine;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
 }
 
 .login label
 {
+    color: white;
+    background: none;
+    border: none;
     padding-left: 6px;
     text-align: start;
     display: flex;
@@ -30,22 +38,31 @@ body
 
 .login h2 
 {
+    color: white;
     font-size: 2em;
+    margin-bottom: 30px;
 }
-
-
 
 .login .frmLogin input
 {
+    color: white;
+    background: none;
+    border: none;
     display: block;
     /* padding: 10px 40px; */
     margin: 5px;
+}
 
+.login .frmLogin input::placeholder{
+    color: white;
 }
 
 .login .frmLogin input[type = 'email'],
 .login .frmLogin input[type = 'password']
 {
+    color: white;
+    background: none;
+    border: none;
     width: 100%;
     padding: 15px;
     height: 15px;
@@ -69,8 +86,9 @@ body
     /* padding: 10px 40px; */
     margin: 0 auto;
     background: none;
-
+    margin-top: 20px;
 }
+
 .login .frmLogin .btn input
 {
     margin-top: 18px;
@@ -89,7 +107,8 @@ body
 }
 .login .frmLogin .btn input:hover
 {
-    background-color: rgb(223, 226, 8)
+    background-color: rgb(223, 226, 8);
+    color: black;
 }
 
 @media (min-width: 720px)
