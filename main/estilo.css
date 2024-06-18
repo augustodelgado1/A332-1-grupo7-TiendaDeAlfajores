@@ -176,6 +176,26 @@ header {
     }
 }
 
+@media (max-width:1400px) {
+    .logo{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logoContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width:1100px) {
+    .logo{
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
 :root {
     --fondo-contraste1: #997A56;
     --color-contraste2: navajowhite;
