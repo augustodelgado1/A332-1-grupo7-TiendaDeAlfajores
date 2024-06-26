@@ -6,9 +6,12 @@
     align-items: center;
     background: url("./img/fondoContacto.jpg") no-repeat center/cover;
     flex-wrap: wrap;
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
 #contacto form {
+
     width: 90%;
     max-width: 670px;
     display: flex;

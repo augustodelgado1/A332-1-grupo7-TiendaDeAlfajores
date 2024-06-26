@@ -14,6 +14,12 @@ section {
   align-items: center;
   font-family: "Cinzel", serif;
   width: 100%;
+  max-width: 100%;
+  color: black;
+}
+
+.tituloPromo h3{
+  color: var(--color-contraste8);
 }
 
 .container ul {
@@ -22,8 +28,8 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  margin: 0; /* Ajuste para asegurar que no haya margen externo */
-  padding: 0; /* Ajuste para asegurar que no haya padding externo */
+  margin: 0;
+  padding: 0;
 }
 
 .container li {
