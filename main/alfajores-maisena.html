@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfajores Clasicos</title>
-    <link rel="stylesheet" href="./estilo.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./paginasProductos.css">
-    <link rel="stylesheet" href="footer.css" />
+    <title>Alfajores De Maisena</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="./paginasProductos.css">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="nosotros.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="icon" href="./img/iconoPestaña.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-
-        <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
-
         <div class="containerHeader">
+            <div class="logoContainer">
+                <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
+            </div>
             <nav class="menu">
                 <ul>
                     <li class="borde"><a href="./index.html#inicio">INICIO</a></li>
@@ -30,91 +34,111 @@
                     <li class="borde"><a href="./index.html#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
+
+            <div class="botones">
+                <span class="spanIcono">
+                    <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
+                </span>
+                <span class="spanIcono">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </span>
+            </div>
         </div>
     </header>
 
     <main>
-        <article class="informacionProd">
+        <section class="containerInicial">
+            <article class="informacionProd">
 
-            <div class="img">
-                <img src="./img/productos/alfajor-de-maicena.jpg" alt="alfajor de maicena">
+                <div class="img">
+                    <img src="./img/productos/alfajor-de-maicena.jpg" alt="alfajor de maicena">
+                </div>
+    
+                <div class="informacion">
+                    <div class="texto">
+                        <h2>Alfajores De maicena</h2>
+                        <p>
+                            Redescubre el sabor de la tradición con nuestro Alfajor de Maicena. 
+                            Este clásico argentino se caracteriza por su textura suave y desmenuzable, 
+                            lograda gracias a la mezcla de maicena y harina en sus galletas, que abrazan un relleno cremoso de dulce de leche con coco rallado. Para el toque final,
+                             cada alfajor está delicadamente espolvoreado con coco rallado, ofreciendo un equilibrio perfecto entre dulzura y suavidad.
+                        </p>
+                        <p>
+                            <span class="precio">
+                                <strong>$400</strong>
+                            </span>
+                        </p>
+                    </div>
+    
+                    <div class="adicional">
+                        <ul>
+                            <li>Peso: 55g</li>
+                            <li>Sabor: maicena</li>
+                            <li>Categorías: Alfajores Clasicos</li>
+                        </ul>
+    
+                        <ul class="contenedor-de-botones">
+    
+                            <li class="contenedor-btn boton">
+                                <a class="btn-favorito" href="#"><i class="fa-regular fa-heart"></i></a>
+                                <span>Añadir a favoritos</span>
+                            </li>
+
+                            <li class="contenedor-btn">
+
+                                <div class="boton">
+                                    <label for="btn-cantidad">Cantidad:</label>
+                                    <input Id='btn-cantidad' type="number" value="1" min="1" max="10" autocomplete="off"
+                                        step="1" inputmode="numeric">
+                                </div>
+                            </li>
+    
+                            <li class="contenedor-btn">
+                                
+                                <a href="">
+                                    <button class="boton" title="Realizar Compra">
+                                        Añadir al Carrito
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="containerAdicional">
+            <div class="informacion">
+                <div class="texto">
+
+                    <h2>INFORMACION ADICIONAL</h2>
+                    <h3>¿COMO ESTA ELABORADO?</h3>
+
+                    <p>Un alfajor de maicena relleno de dulce de leche con coco rallado es una delicia artesanal que se elabora
+                        Nuestro Alfajor de Maicena se elabora con ingredientes seleccionados cuidadosamente.
+                        Las galletas se preparan mezclando maicena, harina, mantequilla y un toque de esencia de vainilla,
+                        creando una masa que se hornea hasta que alcanza una textura tierna y fragante. Una vez horneadas,
+                        se rellenan con dulce de leche y se enrollan en coco rallado fresco, dando como resultado un alfajor que se deshace en la boca.
+                    </p>
+                </div>
             </div>
 
             <div class="informacion">
-                <div class="texto">
-                    <h2>Alfajores De maicena</h2>
+                <h2>Comentarios</h2>
+                <blockquote>
+                    <cite>marcelo aranda</cite>
                     <p>
-                        Redescubre el sabor de la tradición con nuestro Alfajor de Maicena. 
-                        Este clásico argentino se caracteriza por su textura suave y desmenuzable, 
-                        lograda gracias a la mezcla de maicena y harina en sus galletas, que abrazan un relleno cremoso de dulce de leche con coco rallado. Para el toque final,
-                         cada alfajor está delicadamente espolvoreado con coco rallado, ofreciendo un equilibrio perfecto entre dulzura y suavidad.
+                        "El Alfajor de Maicena es como un abrazo de la abuela en cada bocado. Su suavidad y sabor son incomparables."
                     </p>
-                    <p>
-                        <span class="precio">
-                            <strong>$400</strong>
-                        </span>
+                </blockquote>
+    
+                <blockquote>
+                    <cite>ringo bonavena</cite>
+                    <p>Los alfajores de maicena rellenos de dulce de leche con coco rallado son simplemente irresistibles. 
+                        "La combinación del dulce de leche con el coco rallado es simplemente perfecta. No puedo comer solo uno."
                     </p>
-                </div>
-
-                <div class="adicional">
-                    <ul>
-                        <li>Peso: 55g</li>
-                        <li>Sabor: maicena</li>
-                        <li>Categorías: Alfajores Clasicos</li>
-                    </ul>
-
-                    <ul class="contenedor-de-botones">
-
-                        <li class="contenedor-btn-favorito">
-                            <a class="btn-favorito" href="#"><i class="fa-regular fa-heart"></i>
-                            </a>
-                            <span>Añadir a favoritos</span>
-                        </li>
-                        <li class="contenedor-btn-cantidad">
-                            <label for="btn-cantidad">Cantidad:</label>
-                            <input Id='btn-cantidad' type="number" value="1" min="1" max="10" autocomplete="off"
-                                step="1" inputmode="numeric">
-                        </li>
-
-                        <li class="contenedor-btn-compra">
-                            <a href="">
-                                <button>Añadir al Carrito</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </blockquote>
             </div>
-        </article>
-
-        <section class="caracteristicas-secundarias">
-
-            <h2>Informacion Adicional</h2>
-            <h3>Como esta Elaborado</h3>
-
-            <p>Un alfajor de maicena relleno de dulce de leche con coco rallado es una delicia artesanal que se elabora
-                Nuestro Alfajor de Maicena se elabora con ingredientes seleccionados cuidadosamente.
-                 Las galletas se preparan mezclando maicena, harina, mantequilla y un toque de esencia de vainilla,
-                  creando una masa que se hornea hasta que alcanza una textura tierna y fragante. Una vez horneadas,
-                   se rellenan con dulce de leche y se enrollan en coco rallado fresco, dando como resultado un alfajor que se deshace en la boca.
-            </p>
-        </section>
-
-        <section class="comentarios">
-
-            <h2>Comentarios</h2>
-            <blockquote>
-                <cite>marcelo aranda</cite>
-                <p>
-                    "El Alfajor de Maicena es como un abrazo de la abuela en cada bocado. Su suavidad y sabor son incomparables."
-                </p>
-            </blockquote>
-
-            <blockquote>
-                <cite>ringo bonavena</cite>
-                <p>Los alfajores de maicena rellenos de dulce de leche con coco rallado son simplemente irresistibles. 
-                    "La combinación del dulce de leche con el coco rallado es simplemente perfecta. No puedo comer solo uno."
-                </p>
-            </blockquote>
         </section>
     </main>
 

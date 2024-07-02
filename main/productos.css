@@ -30,7 +30,7 @@ body {
     border: none;
     border-radius: 10px;
     background-color: #ffc127;
-    color: white;
+    color: var(--color-contraste7);
     border-radius: 7px;
     font-size: 18px;
     cursor: pointer;
@@ -41,6 +41,7 @@ body {
 
 #nuestros-productos .btn-info:hover {
     background-color: red;
+    color: var(--letrasContraste4);
 }
 
 .contenedor {
@@ -56,10 +57,16 @@ body {
     padding: 10px;
     background-color: rgb(30, 30, 30);
     color: var(--letrasContraste4);
+    padding-top: 55px;
 }
 
 #nuestros-productos p{
+    color: transparent;
+}
+
+#nuestros-productos p:hover{
     color: var(--letrasContraste1);
+    transition: 0.5s;
 }
 
 #nuestros-productos h2 {
@@ -99,7 +106,7 @@ body {
 }
 
 .alfajor-fruta {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-de-fruta.webp');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-de-fruta.png');
 }
 
 .barraDespegable {
@@ -134,7 +141,9 @@ article .precio {
 
 @media (min-width: 720px) {
     #nuestros-productos {
+        padding-top: 55px;
         background-color: rgb(30, 30, 30);
+        padding-bottom: 55px;
     }
 
     #nuestros-productos h2 {

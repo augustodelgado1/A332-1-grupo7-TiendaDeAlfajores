@@ -1,35 +1,42 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
-body {
-    font-family: Arial, sans-serif;
+.containerInicial{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url("img/fondoInicio.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
 }
 
 .informacionProd {
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;    
+    flex-wrap: wrap;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 10px;
+    background-color: rgb(30, 30, 30);
 }
 
-.img{
+.informacionProd img{
     display: flex;
     padding: 20px 10px;
-}
-
-.img img {
-    max-width: 300px;
+    max-width: 350px;
     max-height: 400px;
 }
 
 .informacion {
     padding: 20px;
+    max-width: 100%;
 }
 
 .informacion .texto {
@@ -37,20 +44,23 @@ body {
 }
 
 .informacion .texto h2 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 24px;
-    color: #333;
+    color: navajowhite;
+    font-size: 40px;
+    font-family: "Montagu Slab", Sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
 }
 
 .informacion .texto p {
+    font-family: "Montagu Slab", Sans-serif;
+    font-size: 20px;
     margin-bottom: 15px;
-    color: #666;
+    color: white;
 }
 
 .informacion .precio {
-    color: #ffc127;
-    font-size: 2rem;
+    color: var(--color-contraste6);
+    font-size: 45px;
     margin-bottom: 15px;
 }
 
@@ -61,8 +71,10 @@ body {
 }
 
 .adicional ul li {
+    font-family: "Montagu Slab", Sans-serif;
+    font-size: 18px;
     margin-bottom: 10px;
-    color: #333;
+    color: white;
     margin-left: 10px;
 }
 
@@ -70,21 +82,74 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.contenedor-btn-favorito {
+.contenedor-btn {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 20px; 
 }
 
-.contenedor-btn-favorito .btn-favorito {
+.boton{
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc127;
+    color: var(--color-contraste7);
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+a .boton:hover {
+    background-color: red;
+    color: var(--letrasContraste4);
+}
+
+.contenedor-btn .btn-favorito {
     color: #e74c3c;
-    font-size: 24px;
+    font-size: 30px;
     margin-right: 10px;
-    text-decoration: none;
+    font-weight: bold;
 }
 
-.contenedor-btn-favorito span {
-    color: #333;
+.contenedor-btn span {
+    color: var(--color-contraste7);
+}
+
+.containerAdicional{
+    padding-top: 50px;
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    background-image: url("img/fondoInfo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.containerAdicional h2 {
+    color: navajowhite;
+    font-size: 40px;
+    font-family: "Sofia", Sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+}
+
+.containerAdicional blockquote{
+    align-items: start;
+}
+
+.containerAdicional cite{
+    font-family: "Montagu Slab", Sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--letrasContraste5);
+}
+
+.containerAdicional p{
+    font-size: 20px;
+    font-family: "Montagu Slab", Sans-serif;
+    color: white;
 }

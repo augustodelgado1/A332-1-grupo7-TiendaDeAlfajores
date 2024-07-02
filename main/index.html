@@ -31,18 +31,12 @@
 
 <body>
     <header>
-        <div class="botones">
-            <span class="spanIcono">
-                <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
-            </span>
-            <span class="spanIcono">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </span>
-        </div>
-        <div class="logoContainer">
-            <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
-
+        <section id="header">
             <div class="containerHeader">
+
+                <div class="logoContainer">
+                    <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
+                </div>
                 <nav class="menu">
                     <ul>
                         <li class="borde"><a href="#inicio">INICIO</a></li>
@@ -52,8 +46,18 @@
                         <li class="borde"><a href="#contacto">CONTACTO</a></li>
                     </ul>
                 </nav>
+
+                <div class="botones">
+                    <span class="spanIcono">
+                        <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
+                    </span>
+                    <span class="spanIcono">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </span>
+                </div>
             </div>
-        </div>
+        </section>
+
         <section class="inicio">
                 <div>
                     <h1>DULCE TENTACION</h1>
@@ -61,14 +65,11 @@
 
                 <div class="textoInfo">
                     <p>En Dulces Tentaciones, nos dedicamos a la elaboración de alfajores artesanales que evocan los
-                        sabores
-                        tradicionales y caseros. Con más de 50 años de experiencia, seguimos fieles a las recetas
-                        familiares,
-                        ofreciendo productos de la más alta calidad que acompañan a nuestros clientes en los momentos
-                        más
-                        importantes de la vida. Nuestro compromiso es brindarte dulces experiencias con cada bocado,
-                        manteniendo
-                        siempre el sabor y la calidad que nos caracterizan.
+                        sabores tradicionales y caseros. Con más de 50 años de experiencia, seguimos fieles a las
+                        recetas familiares, ofreciendo productos de la más alta calidad que acompañan a nuestros
+                        clientes en los momentos más importantes de la vida. Nuestro compromiso es brindarte 
+                        dulces experiencias con cada bocado, manteniendo siempre el sabor y la calidad que nos 
+                        caracterizan.
                     </p>
                 </div>
 
@@ -93,9 +94,8 @@
                         <h3>Alfajor De Chocolate</h3>
 
                         <p>
-                            Nuestros alfajores están rellenos de un suave y cremoso dulce de leche, envueltos en una
-                            delicada capa de chocolate o espolvoreados con azúcar impalpable.
-                            Perfectos para acompañar tu café
+                            Nuestros alfajores están rellenos de un suave y cremoso dulce de leche.
+                            Perfectos para acompañar tu café.
                         </p>
 
                         <a href="./alfajores-chocolate.html">
@@ -110,9 +110,7 @@
 
                         <h3>Alfajor Blanco</h3>
 
-                        <p>Un alfajor de chocolate blanco relleno de dulce de leche
-                            consiste en dos galletas suaves con un cremoso relleno de
-                            dulce de leche, todo cubierto por una capa de chocolate blanco.
+                        <p>Descubre el alfajor de chocolate blanco relleno de dulce de leche
                             Es una deliciosa combinación de texturas y sabores dulces.
                         </p>
 
@@ -127,9 +125,8 @@
 
                         <h3>Alfajor De Fruta</h3>
 
-                        <p>Descubre la magia de un alfajor de fruta, donde dos galletas suaves abrazan un corazón de
-                            mermelada de frutas frescas. Cada bocado, bañado en un delicado glasé, es una sinfonía de
-                            sabores que deleita el paladar y transporta a un paraíso dulce y afrutado.
+                        <p>Descubre la magia de un alfajor de fruta, donde dos galletas suaves
+                            abrazan un corazón de mermelada de frutas frescas.
                         </p>
 
                         <a href="./alfajores-fruta.html">
@@ -144,7 +141,7 @@
                         <h3>Alfajor De Maicena</h3>
 
                         <p>Descubre el alfajor de maicena, con su suave relleno de dulce de leche y cobertura de coco
-                            rallado. Una delicia tradicional que combina texturas y sabores en cada mordisco.
+                            rallado.
                         </p>
 
                         <a href="./alfajores-maisena.html">
@@ -158,11 +155,7 @@
 
                         <h3>Alfajor Vegano</h3>
 
-                        <p>Prueba nuestro alfajor vegano, elaborado con ingredientes 100% de origen vegetal. Relleno de
-                            dulce de leche de coco y cubierto con chocolate vegano, cada bocado es una explosión de
-                            sabor natural y conciencia ecológica.
-                        </p>
-
+                        <p>Prueba nuestro alfajor vegano, elaborado con ingredientes 100% de origen vegetal.</p>
 
                         <a href="./alfajores-vegano.html">
                             <button class="btn-info" title="Mas Informacion">
@@ -186,14 +179,14 @@
                         <p class="parrafo">
 
                             Somos una cadena de locales especializadas en alfajores,
-                            de producción propia y artesanal.
+                            de producción propia y artesanal que desde siempre hemos 
+                            tenido claro que no hay objetivo más alto que establecer 
+                            y cuidar, por sobre todo, la relación entre nuestra marca 
+                            y nuestro cliente.
                         </p>
 
                         <p class="parrafo">
 
-                            Desde siempre tuvimos claro que no hay objetivo
-                            más alto que establecer y cuidar, por sobre todo,
-                            la relación entre nuestra marca y nuestro cliente.
                             Es a partir de esta premisa de excelencia que hoy
                             hemos decidido ofrecer la calidad y frescura de
                             nuestros productos, y la calidez de nuestros servicios
@@ -474,9 +467,13 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-
         </div>
     </footer>
+    <script>
+        function mostrarMensaje(){
+            Swal.fire("SweetAlert2 is working!");
+        }
+    </script>
 </body>
 
 </html>
