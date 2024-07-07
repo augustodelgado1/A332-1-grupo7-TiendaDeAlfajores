@@ -58,7 +58,9 @@
 }
 
 .login .frmLogin input[type = 'email'],
-.login .frmLogin input[type = 'password']
+.login .frmLogin input[type = 'password'],
+.login .frmLogin input[type = 'number'], /* linea nueva*/
+.login .frmLogin input[type = 'date'] /* linea nueva*/
 {
     color: white;
     background: none;
@@ -71,6 +73,7 @@
     border: 1px solid;
     font-size: 16px;
 }
+
 .login .frmLogin input[type = 'email']:focus,
 .login .frmLogin input[type = 'password']:focus
 {

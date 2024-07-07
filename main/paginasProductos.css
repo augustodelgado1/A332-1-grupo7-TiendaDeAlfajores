@@ -95,7 +95,7 @@
     margin-top: 18px;
     padding: 10px 20px;
     border: none;
-    background-color: #ffc127;
+    background-color: var(--color-contraste2);
     color: var(--color-contraste7);
     border-radius: 7px;
     font-size: 19px;
@@ -103,8 +103,8 @@
 }
 
 a .boton:hover {
-    background-color: red;
-    color: var(--letrasContraste4);
+    background-color: var(--color-contraste7);
+    color: var(--color-contraste2);
 }
 
 .contenedor-btn .btn-favorito {
@@ -112,10 +112,12 @@ a .boton:hover {
     font-size: 30px;
     margin-right: 10px;
     font-weight: bold;
+    animation: pulse 1s infinite alternate;
 }
 
 .contenedor-btn span {
     color: var(--color-contraste7);
+    font-size: 20px;
 }
 
 .containerAdicional{
