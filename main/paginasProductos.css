@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.containerInicial{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url("img/fondoInicio.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.informacionProd {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+}
+
+.informacionProd img{
+    display: flex;
+    padding: 20px 10px;
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.informacion {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.informacion .texto {
+    text-align: center;
+}
+
+.informacion .texto h2 {
+    color: navajowhite;
+    font-size: 40px;
+    font-family: "Montagu Slab", Sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+}
+
+.informacion .texto p {
+    font-family: "Montagu Slab", Sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.informacion .precio {
+    color: var(--color-contraste6);
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.adicional ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.adicional ul li {
+    font-family: "Montagu Slab", Sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 10px;
+}
+
+.contenedor-de-botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-btn {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.boton{
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-contraste2);
+    color: var(--color-contraste7);
+    border-radius: 7px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+a .boton:hover {
+    background-color: var(--color-contraste7);
+    color: var(--color-contraste2);
+}
+
+.contenedor-btn .btn-favorito {
+    color: #e74c3c;
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    animation: pulse 1s infinite alternate;
+}
+
+.contenedor-btn span {
+    color: var(--color-contraste7);
+    font-size: 20px;
+}
+
+.containerAdicional{
+    padding-top: 50px;
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    background-image: url("img/fondoInfo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.containerAdicional h2 {
+    color: navajowhite;
+    font-size: 40px;
+    font-family: "Sofia", Sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+}
+
+.containerAdicional blockquote{
+    align-items: start;
+}
+
+.containerAdicional cite{
+    font-family: "Montagu Slab", Sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--letrasContraste5);
+}
+
+.containerAdicional p{
+    font-size: 20px;
+    font-family: "Montagu Slab", Sans-serif;
+    color: white;
+}

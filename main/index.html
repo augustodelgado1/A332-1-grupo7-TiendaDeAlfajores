@@ -1,200 +1,481 @@
-<!DOCTYPE html>
-<html lang="es">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulce Tentación</title>
-    <link rel="stylesheet" href="./Css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstr
-ap.min.css" rel="stylesheet" integrity="sha384-
-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossor
-igin="anonymous">
-    
-    <link rel="icon" href="img/iconos/LogoPrincipal.ico" type="image/x-icon">
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./novedades.css">
+    <link rel="stylesheet" href="./galeria.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="productos.css" />
+    <link rel="stylesheet" href="nosotros.css" />
+    <link rel="icon" href="./img/iconoPestaña.png" type="image/x-icon">
+    <title>Dulce Tentaciones</title>
 </head>
 
 <body>
+    <header>
+        <section id="header">
+            <div class="containerHeader">
 
-    <header class="cabecera">
+                <div class="logoContainer">
+                    <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li class="borde"><a href="#inicio">INICIO</a></li>
+                        <li class="borde"><a href="#nuestros-productos">PRODUCTOS</a></li>
+                        <li class="borde"><a href="#nosotros">NOSOTROS</a></li>
+                        <li class="borde"><a href="#novedades">NOVEDADES</a></li>
+                        <li class="borde"><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </nav>
 
-        <div class="contenedor">
-            <div class="logo">
-                <!-- <img src="#" alt="Logo de la empresa" width="300"> -->
-                <h1>Dulces Tentaciones</h1>
+                <div class="botones">
+                    <span class="spanIcono">
+                        <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
+                    </span>
+                    <span class="spanIcono">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </span>
+                </div>
             </div>
+        </section>
 
-            
-            <nav>
-                <ul class="Menu">
-                    <li>
-                        <a href="./index.html" >INICIO</a>
-                    </li>
-                    
-                    <li>
-                        <a href="./nosotros.html" >NOSOTROS</a>
-                    </li>
-
-                    <li>
-                        <a href="./login.html">CONTACTO</a>
-                    </li>
-
-                    <li>
-                        <a href="./productos.html" >PRODUCTOS</a>
-                    </li>
-
-                    <li>
-                        <a href="./novedades.html" >NOVEDADES</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
-
-    <main>
-        <div class="contenedor">
-            <section class="principal">
-
-                
-                <h2>Bienvenidos a Dulces Tentaciones</h2>
-                
+        <section id="inicio">
                 <div>
-                    <p>Nos especializamos en la producción y venta alfajores artesanales
-                        en Argentina. 
-                        Nustra empresa fue fundada en 2010, nuestra misión es ofrecer alfajores 
-                        de alta calidad que capturen el sabor tradicional y auténtico del alfajor argentino. 
-                        Con cada bocado, buscamos conquistar el paladar de nuestros clientes 
-                        y brindarles una experiencia única e inolvidable.
+                    <h1>DULCE TENTACION</h1>
+                </div>
+
+                <div class="textoInfo">
+                    <p>En Dulces Tentaciones, nos dedicamos a la elaboración de alfajores artesanales que evocan los
+                        sabores tradicionales y caseros. Con más de 50 años de experiencia, seguimos fieles a las
+                        recetas familiares, ofreciendo productos de la más alta calidad que acompañan a nuestros
+                        clientes en los momentos más importantes de la vida. Nuestro compromiso es brindarte 
+                        dulces experiencias con cada bocado, manteniendo siempre el sabor y la calidad que nos 
+                        caracterizan.
                     </p>
                 </div>
 
-                <div class="btn-group-toggle" data-toggle="buttons">
-                    <a href="./login.html"><button type="button" class="btn-SaberMas">Saber Mas</button></a>
+                <div>
+                    <a href="#contacto">
+                        <button class="button" title="Mas Informacion">
+                            CONOCENOS
+                        </button>
+                    </a>
                 </div>
-            </section>
-        </div>
-    </main>
+        </section>
+    </header>
 
-    <!-- <section>
-        <h2>Destacados</h2>
+    <main>
+        <section id="nuestros-productos">
+            <div class="contenedor">
+                <h2>Nuestros Productos</h2>
 
-        <div class="slider-box">
-            <ul class="contenedorDeItemsCarrusel">
-                    <li  id="primer-itemCarrusel">
-                        <div  class="targetaCarrusel">
-                            A
-                        </div>
-                    
-                        <div class="flechaCarrusel">
-                            
-                            <a href="#tercer-itemCarrusel">
-                                <i>I</i>
-                            </a>
-                            
-                            <a href="#segundo-itemCarrusel">
-                                <i>D</i>
-                            </a>
+                <div class="contenedor-de-productos">
+                    <article class="alfajores-chocolate" title="alfajor de Chocolate">
 
+                        <h3>Alfajor De Chocolate</h3>
 
-                        </div>
-                    </li>
+                        <p>
+                            Nuestros alfajores están rellenos de un suave y cremoso dulce de leche.
+                            Perfectos para acompañar tu café.
+                        </p>
 
-                    <li id="segundo-itemCarrusel">
-                        <div  class="targetaCarrusel">
-                            A
-                        </div>
-                    
-                        <div class="flechaCarrusel">
-                            
-                            <a href="#primer-itemCarrusel">
-                                <i>I</i>
-                            </a>
-                            
-                            <a href="#tercer-itemCarrusel">
-                                <i>D</i>
-                            </a>
+                        <a href="./alfajores-chocolate.html">
+                            <button class="btn-info" title="Mas Informacion" onclick="mostrarMensaje()">
+                                
+                                Comprar
+                            </button>
+                        </a>
+                    </article>
 
+                    <article class="alfajor-blanco" title="alfajor Blanco">
 
-                        </div>
-                    </li>
+                        <h3>Alfajor Blanco</h3>
 
-                    <li id="tercer-itemCarrusel">
-                        <div  class="targetaCarrusel">
-                            A
-                        </div>
-                    
-                        <div class="flechaCarrusel">
-                            
-                            <a href="#segundo-itemCarrusel">
-                                <i>I</i>
-                            </a>
-                            
-                            <a href="#primer-itemCarrusel">
-                                <i>D</i>
-                            </a>
+                        <p>Descubre el alfajor de chocolate blanco relleno de dulce de leche
+                            Es una deliciosa combinación de texturas y sabores dulces.
+                        </p>
 
+                        <a href="./alfajores-blanco.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                Comprar
+                            </button>
+                        </a>
+                    </article>
 
-                        </div>
-                    </li>
-            
-            </ul>
-        
+                    <article class="alfajor-fruta" title="alfajores De Fruta">
 
-            
-        </div>
-       
-    </section> -->
+                        <h3>Alfajor De Fruta</h3>
 
-   
+                        <p>Descubre la magia de un alfajor de fruta, donde dos galletas suaves
+                            abrazan un corazón de mermelada de frutas frescas.
+                        </p>
 
-    <footer>
-        <div class="contenedor">
+                        <a href="./alfajores-fruta.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                Comprar
+                            </button>
+                        </a>
+                    </article>
 
-            <div class="renglones">
-                <div class="links">
-                    <h4>Ayuda</h4>
-                    <ul>
-                        <li>
-                            <a href="#">Preguntas</a>
-                        </li>
-                        
-                        <li>
-                            <a href="#">Envios</a>
-                        </li>
-                    </ul>
+                    <article class="alfajor-maisena" title="alfajor de maisena">
+
+                        <h3>Alfajor De Maicena</h3>
+
+                        <p>Descubre el alfajor de maicena, con su suave relleno de dulce de leche y cobertura de coco
+                            rallado.
+                        </p>
+
+                        <a href="./alfajores-maisena.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                Comprar
+                            </button>
+                        </a>
+                    </article>
+
+                    <article class="alfajor-vegano" title="Alfajor Vegano">
+
+                        <h3>Alfajor Vegano</h3>
+
+                        <p>Prueba nuestro alfajor vegano, elaborado con ingredientes 100% de origen vegetal. 
+                            <br><br><br><br><br><br><br><br><br><br>
+                        </p>
+
+                        <a href="./alfajores-vegano.html">
+                            <button class="btn-info" title="Mas Informacion">
+                                Comprar
+                            </button>
+                        </a>
+                    </article>
                 </div>
+            </div>
+        </section>
 
-                <div class="links">
-                    <h4>Redes</h4>
+        <section id="nosotros">
 
-                    <div class="social-link">
-                        <a href="mailto:jorgitoAlfajores@gmail.com?subject=Contacto"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://twitter.com/JorgitoAlfajor_" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/jorgito_alfajor/?hl=es" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+            <div class="fondo">
+                <div class="containerPrincipal">
+                    <div class="contenedorNosotros">
+
+                        <h2>NOSOTROS</h2>
+                        <h3>¿QUIENES SOMOS?</h3>
+
+                        <p class="parrafo">
+
+                            Somos una cadena de locales especializadas en alfajores,
+                            de producción propia y artesanal que desde siempre hemos 
+                            tenido claro que no hay objetivo más alto que establecer 
+                            y cuidar, por sobre todo, la relación entre nuestra marca 
+                            y nuestro cliente.
+                        </p>
+
+                        <p class="parrafo">
+
+                            Es a partir de esta premisa de excelencia que hoy
+                            hemos decidido ofrecer la calidad y frescura de
+                            nuestros productos, y la calidez de nuestros servicios
+                            fuera de la Argentina.
+                        </p>
                     </div>
                 </div>
 
-                <div class="links">
-                    <h4>Telefonos</h4>
+                <div class="containerPrincipal">
 
-                    <p>011 4127-6955</p>
-                    <p>011 4337-6959</p>
+                    <div class="columnas">
+
+                        <img src="img/objetivo.png" alt="Objetivo">
+                        <h3>NUESTRA MISIÓN</h3>
+
+                        <p>
+                            Ofrecer alfajores de alta calidad
+                            que capturen el sabor tradicional
+                            y auténtico del alfajor argentino.
+
+                            Ser la mejor empresa familiar
+                            de productos alimenticios de BS AS.
+                        </p>
+                    </div>
+
+                    <div class="columnas">
+
+                        <img src="img/vision.png" alt="Vision">
+                        <h3>NUESTRA VISIÓN</h3>
+                        <p>
+                            Queremos ser una compañía argentina con alcance global,
+                            reconocida por sus alfajores y productos, y excelencia
+                            en el servicio de atención de nuestros Locales.
+                        </p>
+                    </div>
+
+                    <div class="columnas">
+
+                        <img src="img/valores.png" alt="Valores">
+                        <h3>NUESTROS VALORES</h3>
+                        <p>
+                            Calidad, Honestidad,
+                            Responsabilidad,
+                            Creatividad,
+                            Desafío, Organización y
+                            Cooperación
+                        </p>
+                    </div>
+                </div>
+
+                <div class="containerPrincipal">
+                    <div class="contenedorNosotros">
+
+                        <h3>NUESTROS LOCALES</h3>
+
+                        <p class="parrafo">
+
+                            Nos enorgullece presentarte un vistazo detrás
+                            de escena a nuestra fábrica, el corazón de
+                            nuestra pasión por la calidad y la excelencia.
+                        </p>
+
+                        <p class="parrafo">
+
+                            Situada en un enclave pintoresco, nuestra fábrica
+                            es mucho más que un centro de producción; es el
+                            hogar donde nuestros maestros chocolateros y
+                            pasteleros trabajan incansablemente para crear
+                            deliciosas delicias que deleitan a los paladares
+                            de todo el mundo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="containerPrincipal">
+                    <div class="containerIMG">
+
+                        <img src="img/local2.jpg" alt="Local">
+                        <img src="img/proceso.webp" alt="Trabajo">
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="derechos">
-                <p>Derechos Reservados</p>
+        <section id="novedades">
+
+            <section class="nuestrasPromociones">
+
+                <h2>Nuestras Promociones!</h2>
+
+                <div class="container">
+
+                    <ul>
+                        <li>
+                            <div class="tituloPromo">
+
+                                <h3>¡ Pack 15% de Descuento !</h3>
+                                <h4>Llevando 2 unidades o mas!</h4>
+                                <br>
+                                <p class="texto">Llevate nuestro mejores alfajores artesanales.</p>
+                            </div>
+
+                            <div class="seccionImagen">
+                                <!-- <div class="circulo">
+                                    <a href="#novedades"> <img src="./img/20Descuento.png" alt="Galletitas"></a>
+                                </div> -->
+                                <a href="#novedades"> <img src="./img/20Descuento.png" alt="Galletitas"></a>
+                            </div>
+
+                            <div class="piePromo">
+                                <p class="texto">Valido Hasta el <time datetime="2024-06-22">22 de junio de 2024</time>.
+                                </p>
+
+                                <button class="agregarCarrito">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tituloPromo">
+
+                                <h3>¡ 3x2 en Alfajores Chiquitos !</h3>
+                                <h4>Pagando 2 te llevas 3!!!</h4>
+                                <br>
+                                <p class="texto">Pagas 2 Unidades y te Llevas 3 Docenas en Alfajores Chiquitos</p>
+                            </div>
+
+                            <div class="seccionImagen">
+                                <!-- <div class="circulo">
+                                    <a href="#novedades"> <img src="./img/oferta.png" alt="Galletitas"></a>
+                                </div> -->
+                                <a href="#novedades"> <img src="./img/oferta.png" alt="Galletitas"></a>
+                            </div>
+
+                            <div class="piePromo">
+                                <p class="texto">Valido Hasta el <time datetime="2024-05-22">15 de junio de 2024</time>.
+                                </p>
+
+                                <button class="agregarCarrito">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="tituloPromo">
+
+                                <h3>¡ Pack 20% de Descuento ! </h3>
+                                <h4>Alfajores negros + Dulce de leche + Galletas</h4>
+                                <br>
+                                <p class="texto">20% de Descuento Llevando los siguientes productos:</p>
+                            </div>
+
+                            <div class="seccionImagen">
+                                <!-- <div class="circulo">
+                                    <a href="#novedades"> <img src="./img/combo.png" alt="Combo"></a>
+                                </div> -->
+                                <a href="#novedades"> <img src="./img/combo.png" alt="Combo"></a>
+                            </div>
+
+                            <div class="piePromo">
+                                <p class="texto">Valido Hasta el <time datetime="2024-05-15">31 de junio de 2024</time>.
+                                </p>
+
+                                <button class="agregarCarrito">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Agregar al carrito
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="nuevosProductos">
+
+                <h2>Proximas novedades!</h2>
+                <div class="productosContainer">
+
+                    <article class="proxNovedades">
+
+                        <div class="tituloPromo">
+                            <p>¡ Nueva Pasta Frola !</p>
+                        </div>
+
+                        <img src="./img/pastaFrola.png" alt="Nuevo Producto Pasta Frola" />
+
+                        <p class="piePromo">
+                            Se dice que hay dulces que 'entran por los ojos', es el caso de la pasta frola,
+                            que parece salida del cuento de ‘Caperucita Roja’. El relleno de esta
+                            tarta suele ser de dulce de membrillo, batata o dulce de leche y esta
+                            decorada con tiras de masa. <br>¡Te conquistará su sabor!
+                        </p>
+                    </article>
+
+                    <article class="proxNovedades">
+
+                        <div class="tituloPromo">
+                            <p>¡ Nuevo Pan Dulce Artesanal !</p>
+                        </div>
+
+                        <img src="./img/panDulce2.png" alt="Nuevo Producto Pan Dulce" />
+
+                        <p class="piePromo">
+                            Un clásico ideal para cualquier época del año! Suaves y esponjosos
+                            rellenos con Frutos Secos (almendras, Avellanas y
+                            Nueces), Frutas Abrillantadas, cerezas y quinotos.<br>
+                            ¡Una delicia que no podrás resistir!
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+        <section id="contacto">
+
+            <form>
+                <h2>Contactanos</h2>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="telefono" placeholder="Telefono" required>
+                <h5>Escribe tu mensaje</h5>
+                <textarea required></textarea>
+                <input type="submit" value="Enviar" id="button">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="containerFooter">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+
+            <div class="menu">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nuestros-productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h3>REDES</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank"> <img src="./img/logos/instagram.png"
+                                alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/logos/facebook.png"
+                                alt="Facebook"></a></li>
+                    <li><a href="https://www.tiktok.com/" target="_blank"><img src="./img/logos/tiktok.png"
+                                alt="TikTok"></a></li>
+                    <li><a href="https://www.whatsapp.com/" target="_blank"><img src="./img/logos/whatsapp.png"
+                                alt="Whatsapp"></a></li>
+                </ul>
+            </div>
+
+            <div class="mapa">
+                <H3>UBICACION</H3>
+                <p>Av. Bartolomé Mitre 750</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7010899865736!2d-58.36706772352862!3d-34.662251060593206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3333416c85145%3A0x20226ada1b9fc4b2!2sUTN%20avellaneda!5e0!3m2!1ses!2sar!4v1718570679670!5m2!1ses!2sar"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </footer>
-
-
+    <script>
+        function mostrarMensaje(){
+            Swal.fire("SweetAlert2 is working!");
+        }
+    </script>
 </body>
 
 </html>

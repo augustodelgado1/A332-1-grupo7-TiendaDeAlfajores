@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+p {
+    font-size: 1.05em;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#nuestros-productos .btn-info {
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffc127;
+    color: var(--color-contraste7);
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+#nuestros-productos .btn-info:hover {
+    background-color: red;
+    color: var(--letrasContraste4);
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#nuestros-productos .contenedor {
+    text-align: center;
+}
+
+#nuestros-productos {
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    color: var(--letrasContraste4);
+    padding-top: 55px;
+}
+
+#nuestros-productos article{
+    color: transparent;
+}
+
+#nuestros-productos article:hover{
+    color: var(--letrasContraste1);
+    transition: 0.5s;
+}
+
+#nuestros-productos h2 {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#nuestros-productos .contenedor-de-productos article {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.alfajores-chocolate {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-de-chocolate.png');
+}
+
+.linea-mini {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/mini-alfajores-de-chocolate.jpg');
+}
+
+.alfajores-variados {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajores-variados.png');
+}
+
+.alfajor-blanco {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-blanco.png');
+}
+
+.alfajor-maisena {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-de-maicena.jpg');
+}
+
+.alfajor-vegano {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-vegano.png');
+}
+
+.alfajor-fruta {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/productos/alfajor-de-fruta.png');
+}
+
+.barraDespegable {
+    justify-content: start;
+    align-items: start;
+}
+
+article h2 {
+    text-align: center;
+}
+
+article .contenedor-de-botones {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1400;
+}
+
+article .contenedor-de-botones li {
+    padding: 10px 5px;
+}
+
+.btn-favorito:hover {
+    background-color: blue;
+}
+
+article .precio {
+    color: #ffc127;
+    font-size: 2.00em;
+}
+
+@media (min-width: 720px) {
+    #nuestros-productos {
+        padding-top: 55px;
+        background-color: rgb(30, 30, 30);
+        padding-bottom: 55px;
+    }
+
+    #nuestros-productos h2 {
+        margin-top: 0;
+        font-size: 3em;
+    }
+
+    #nuestros-productos .contenedor-de-productos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    #nuestros-productos p {
+        display: block;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .btn-info {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+        right: 100px;
+    }
+
+    #nuestros-productos h3 {
+        margin-top: 0;
+    }
+
+    #nuestros-productos .contenedor-de-productos article {
+        position: relative;
+        width: 310px;
+        background-color: black;
+        height: 500px;
+        margin: 5px;
+        background-size: 210%;
+        background-repeat: no-repeat;
+    }
+
+    article header {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: auto;
+        height: 400px;
+        padding-left: 250px;
+    }
+
+    article header img {
+        width: 450px;
+        height: 100%;
+    }
+
+    article .informacion {
+        width: 100%;
+        height: 100%;
+    }
+
+    article .adicional {
+        color: rgb(5, 0, 0);
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+
+    article .texto {
+        padding: 20px;
+    }
+
+    article section h2 {
+        text-align: left;
+    }
+
+    article .contenedor-de-botones {
+        text-align: end;
+        justify-content: end;
+    }
+
+    article .contenedor-de-botones {
+        display: block;
+        text-align: end;
+        justify-content: end;
+    }
+
+    article .contenedor-de-botones li {
+        padding-right: 30px;
+        padding: 10px;
+    }
+
+    /* 
+    article .informacion  
+    {
+        text-align: left;
+        background-color: #ffc127;
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+    }
+   
+
+    article .texto  
+    {
+        padding: 20px;
+    } */
+
+    /* article section h2
+    {
+        text-align: left;
+
+    } */
+}
