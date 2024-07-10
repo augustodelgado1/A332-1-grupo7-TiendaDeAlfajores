@@ -51,12 +51,14 @@
     display: block;
     /* padding: 10px 40px; */
     margin: 5px;
+    outline: none;
 }
 
 .login .frmLogin input::placeholder{
     color: white;
 }
 
+.login .frmLogin input[type = 'text'],
 .login .frmLogin input[type = 'email'],
 .login .frmLogin input[type = 'password'],
 .login .frmLogin input[type = 'number'], /* linea nueva*/
@@ -114,11 +116,14 @@
     color: black;
 }
 
+.frmRegistro{
+    display: none;
+}
+
 @media (min-width: 720px)
 {
     .login 
     {
-        width: 500px;
-
+        width: 600px;
     }
 }
