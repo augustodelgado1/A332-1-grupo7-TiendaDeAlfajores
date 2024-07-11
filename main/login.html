@@ -51,9 +51,9 @@
     <main>
         <section id="containerLogin">
             <div class="login">
-                <h2>Iniciar Sesion</h2>
-                <form class="frmLogin" action="">
-
+                
+                <form id="formLogin" class="frmLogin" action="">
+                    <h2>Iniciar Sesion</h2>
                     <label for="txtEmail">Email</label>
                     <input id="txtEmail" type="email" placeholder="ejemplo@gmail.com" required>
         
@@ -63,24 +63,26 @@
                     <div class="btn">
                         <input type="submit" value="Iniciar Sesion">
                         <input type="button" value="Registrarse">
+                        <input type="button" value="Cerrar Sesion">
                     </div>
                 </form>
 
-                <form class="frmRegistro frmLogin " action="" style="display: none;">
+                <form id="formRegistro" class="frmRegistro frmLogin" action="">
+                    <h2>Registrarse</h2>
                     <label for="txtNombre">Nombre</label>
-                    <input id="txtNombre" type="password" placeholder="Nombre" required>
-                    
+                    <input id="txtNombre" type="text" required>
+
                     <label for="txtApellido">Apellido</label>
-                    <input id="txtApellido" type="password" placeholder="Apellido" required>
+                    <input id="txtApellido" type="text" required>
                     
                     <label for="txtLocalidad">Localidad</label>
-                    <input id="txtLocalidad" type="password" placeholder="Localidad" required>
+                    <input id="txtLocalidad" type="text" required>
                     
-                    <label for="txtEmail">Email</label>
-                    <input id="txtEmail" type="email" placeholder="ejemplo@gmail.com" required>
+                    <label for="txtEmailRegistro">Email</label>
+                    <input id="txtEmailRegistro" type="email" placeholder="ejemplo@gmail.com" required>
                     
-                    <label for="txtClave">Clave</label>
-                    <input id="txtClave" type="password" placeholder="Contraseña" required>
+                    <label for="txtClaveRegistro">Clave</label>
+                    <input id="txtClaveRegistro" type="password" placeholder="ejemplo1234" required>
                     
                     <label for="txtFechaNacimiento">Fecha de Nacimiento</label>
                     <input id="txtFechaNacimiento" type="date" min="1939-01-01" max="2006-12-31" required>
