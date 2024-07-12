@@ -35,14 +35,19 @@
     display: block;
 }
 
-.containerIMG{
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 55px;
+@media (min-width: 950px){
+    .carousel.slide {
+        width: 60%;
+        height: 50%;
+    }
 }
 
-.containerIMG img{
-    max-width: 100%;
+.carousel-control-prev, .carousel-control-next{
+    background-color: black;
+}
+
+.visually-hidden, .carousel-control-next-icon, .carousel-control-prev-icon{
+    animation: pulse 1s infinite alternate;
 }
 
 .parrafo {
