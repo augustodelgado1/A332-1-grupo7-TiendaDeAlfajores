@@ -38,7 +38,7 @@ const productos = [
         id: 7,
         nombre: "Alfajor De Fruta",
         img: "./img/productos/alfajor-de-fruta.png",
-        precio: 400,
+        precio: 500,
         descripcion: ""
     }
 ]
