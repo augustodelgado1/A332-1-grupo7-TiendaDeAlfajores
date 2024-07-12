@@ -1,13 +1,11 @@
 const contenedorTexto = document.getElementById("cartaProducto");
 
-function comprarProducto(event, producto) {
-    console.log("entro comprarProducto");
-    event.preventDefault();
-    localStorage.setItem("producto", JSON.stringify(producto));
-}
 
-document.addEventListener("DOM", function() {
-    const producto = JSON.parse(localStorage.getItem("producto"));
+
+document.addEventListener("DOMContentLoaded", function() {
+    const idproducto = JSON.parse(localStorage.getItem("producto"));
+    const producto = productos.find(productoAux => productoAux.id===idproducto);
+    console.log("producto encontrado: "+ producto)
     if (producto) {
         crearPaginaProducto(producto);
         localStorage.removeItem("producto");

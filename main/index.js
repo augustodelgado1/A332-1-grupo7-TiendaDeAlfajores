@@ -14,7 +14,7 @@ function crearTarjetaProductos(productos) {
         nuevoProducto.innerHTML = `
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
-            <a href="./compraProductos.html" onclick="comprarProducto(event, ${JSON.stringify(producto)})" >
+            <a href="./compraProductos.html" onclick="comprarProducto(${producto.id})" >
                 <button class="btn-info" title="Mas Informacion">
                     Comprar
                 </button>
@@ -26,3 +26,8 @@ function crearTarjetaProductos(productos) {
 }
 
 crearTarjetaProductos(productos);
+
+function comprarProducto(producto) {
+    console.log("entro comprarProducto");
+    localStorage.setItem("producto", JSON.stringify(producto));
+}
