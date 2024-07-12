@@ -18,27 +18,27 @@ const productos = [
         nombre: "Alfajor Blanco",
         img: "./img/productos/alfajor-blanco.png",
         precio: 400,
-        descripcion: ""
+        descripcion: "Delicioso alfajor relleno de suave y cremoso dulce de leche, cubierto con una capa de chocolate que se derrite en la boca. ¡Un clásico irresistible!"
     },
     {
         id: 5,
         nombre: "Alfajor De Maicena",
         img: "./img/productos/alfajor-de-maicena.png",
         precio: 400,
-        descripcion: ""
+        descripcion: "Delicioso alfajor relleno de suave y cremoso dulce de leche, cubierto con una capa de chocolate que se derrite en la boca. ¡Un clásico irresistible!"
     },
     {
         id: 6,
         nombre: "Alfajor Vegano",
         img: "./img/productos/alfajor-vegano.png",
         precio: 400,
-        descripcion: ""
+        descripcion: "Delicioso alfajor relleno de suave y cremoso dulce de leche, cubierto con una capa de chocolate que se derrite en la boca. ¡Un clásico irresistible!"
     },
     {
         id: 7,
         nombre: "Alfajor De Fruta",
         img: "./img/productos/alfajor-de-fruta.png",
         precio: 500,
-        descripcion: ""
+        descripcion: "Delicioso alfajor relleno de suave y cremoso dulce de leche, cubierto con una capa de chocolate que se derrite en la boca. ¡Un clásico irresistible!"
     }
 ]

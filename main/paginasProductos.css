@@ -39,11 +39,11 @@
     max-width: 100%;
 }
 
-.informacion .texto {
+.informacion{
     text-align: center;
 }
 
-.informacion .texto h2 {
+.informacion h2 {
     color: navajowhite;
     font-size: 40px;
     font-family: "Montagu Slab", Sans-serif;
@@ -51,7 +51,7 @@
     font-weight: bold;
 }
 
-.informacion .texto p {
+.informacion p {
     font-family: "Montagu Slab", Sans-serif;
     font-size: 20px;
     margin-bottom: 15px;
@@ -79,6 +79,7 @@
 }
 
 .contenedor-de-botones {
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-around;
