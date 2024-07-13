@@ -44,7 +44,6 @@
                         <li class="borde"><a href="#nosotros">NOSOTROS</a></li>
                         <li class="borde"><a href="#novedades">NOVEDADES</a></li>
                         <li class="borde"><a href="#contacto">CONTACTO</a></li>
-                        <li class="borde"><a href="carrito.html">Carrito</a></li>
                     </ul>
                 </nav>
 
@@ -54,6 +53,10 @@
                     </span>
                     <span class="spanIcono">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </span>
+                    
+                    <span class="spanIcono">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
                     </span>
                 </div>
             </div>
@@ -422,7 +425,7 @@
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="text" id="telefono" placeholder="Telefono" required>
                 <h5>Escribe tu mensaje</h5>
-                <textarea required></textarea>
+                <textarea required id="mensaje"></textarea>
                 <input type="submit" value="Enviar" id="button">
             </form>
         </section>
@@ -469,14 +472,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        function mostrarMensaje(){
-            Swal.fire("SweetAlert2 is working!");
-        }
-    </script>
+    <script src="validador.js"></script>
     <script src="login.js"></script>
     <script src="productos.js"></script>
-    <script src="cartService.js"></script>
 </body>
 
 </html>
