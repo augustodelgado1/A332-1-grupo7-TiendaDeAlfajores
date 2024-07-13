@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#containerCarrito{
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img/fondoContacto.jpg") no-repeat center/cover;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#listadoDeProductos {
+    width: 90%;
+    max-width: 670px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    flex-wrap: wrap;
+    min-height: 500px;
+    padding: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.tarjeta-producto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacion-producto {
+    backdrop-filter: blur(1000px);
+    padding: 10px 5px;
+    border-radius: 2%;
+    width: calc(100% - 40px); /* Ajustar el ancho para tener en cuenta los márgenes */
+    margin: 10px 20px;
+    display: flex; /* Cambiado a flex para la disposición en línea */
+    justify-content: space-between; 
+    flex-direction: column; 
+}
+
+#nombreProducto{
+    color: rgb(39, 25, 25);
+    display: flex;
+    justify-content:center;    
+    align-items: center;
+}
+
+.boton{
+    color: rgb(39, 25, 25);
+    font-size: 18px;
+}
+
+.precioFinal{
+    color: rgb(39, 25, 25);
+    font-size: 25px;
+}
+
+#botonesComprar{
+    margin: 20px;
+}
+
+#botonesComprar{
+    grid-column-start: 2;
+    margin-top: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc127;
+    color: var(--color-contraste7);
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+#botonesComprar:hover {
+    background-color: red;
+    color: var(--letrasContraste4);
+}
+
+
+

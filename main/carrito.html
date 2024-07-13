@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="./novedades.css">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="./novedades.css">
     <link rel="stylesheet" href="./galeria.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="productos.css" />
     <link rel="stylesheet" href="nosotros.css" />
+    <link rel="stylesheet" href="carrito.css" />
     <link rel="icon" href="./img/iconoPestaña.png" type="image/x-icon">
     <script src="./productos.js"></script>
     <script src="./carrito.js"></script>
@@ -51,8 +53,14 @@
     </header>
 
     <main>
-        <section id="containerLogin">
+        <section id="containerCarrito">
             <div id="listadoDeProductos">
+                
+            </div>
+            <div>
+                <button id="botonesComprar" onclick="mostrarMensaje()">
+                    Realizar Compra
+                </button>
             </div>
         </section>
     </main>

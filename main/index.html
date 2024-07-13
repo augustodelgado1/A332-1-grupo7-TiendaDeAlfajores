@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="productos.css" />
     <link rel="stylesheet" href="nosotros.css" />
     <link rel="icon" href="./img/iconoPestaña.png" type="image/x-icon">
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./productos.js"></script>
     <script src="./index.js" defer></script>
 
@@ -54,8 +54,8 @@
                     <span class="spanIcono">
                         <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
                     </span>
-                    <span class="spanIcono">
-                        <a href="carrito.html" ><i class="fa-solid fa-shopping-cart" aria-hidden="true"><span id="contadorCarrito"></span>0</i></a>
+                    <span class="spanIcono" onclick="irACarrito()">
+                        <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                     </span>
                     <span class="spanIcono">
                         <i class="fas fa-heart" aria-hidden="true"></i>
