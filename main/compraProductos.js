@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("producto encontrado: "+ producto)
     if (producto) {
         crearPaginaProducto(producto);
-        localStorage.removeItem("producto");
     } else {
         console.error('No se encontró el producto en el localStorage.');
     }
@@ -46,7 +45,7 @@ function crearPaginaProducto(producto) {
   }
   
 async function cargarContenidoBotones() {
-    const urlBotones = "botones.html"; // Ruta del archivo HTML
+    const urlBotones = "botones.html";
     const respuesta = await fetch(urlBotones);
   
     if (respuesta.ok) {
