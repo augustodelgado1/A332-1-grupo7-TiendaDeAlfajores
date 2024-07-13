@@ -62,7 +62,11 @@ function VerificarAccionAgregarCarrito()
 
                 if (usuarioIniciado != null && usuarioIniciado.sesionIniciada) 
                 {
-                    alert("Se agrego al carrito.");
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Esta promoción ya no esta vigente!",
+                      });;
                 } 
                 else 
                 {
@@ -85,6 +89,5 @@ function RellenarCorazon()
     });
 }
 
-VerificarAccionCompra();
 VerificarAccionAgregarCarrito();
 RellenarCorazon();
