@@ -148,6 +148,7 @@ header {
     font-size: 30px; 
     color: var(--letrasContraste5);
     padding: 6px;
+    cursor: pointer;
 }
 
 .spanIcono{

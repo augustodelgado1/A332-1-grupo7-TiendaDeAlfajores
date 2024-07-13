@@ -42,51 +42,33 @@ const productos = [
         descripcion: "Delicioso alfajor relleno de suave y cremoso dulce de leche, cubierto con una capa de chocolate que se derrite en la boca. ¡Un clásico irresistible!"
     }
 ]
-function VerificarAccionCompra() 
-{
-    const botonesComprar = document.querySelectorAll(".btn-info");
-    
-    botonesComprar.forEach(function(boton)
-    {
-        boton.addEventListener("click", function(event) {
-            event.preventDefault();
-            
-            let usuarios = DevolverUsuarios();
-            let usuarioIniciado = BuscarUsuarioIniciado(usuarios);
 
-            if(usuarioIniciado != null && usuarioIniciado.sesionIniciada)
-            {
-                window.location.href = boton.getAttribute("url");
-            }
-            else
-            {
-                alert("Debes iniciar sesion para realizar una compra.");
-            }
-        });
-    });
-}
+
 
 function VerificarAccionAgregarCarrito() 
 {
-    const botonesAgregarCarrito = document.querySelectorAll(".agregarCarrito");
-
-    botonesAgregarCarrito.forEach(function(boton)
+    document.addEventListener("DOMContentLoaded", function() 
     {
-        boton.addEventListener("click", function(event) 
-        {
-            event.preventDefault();
-            
-            let usuarios = DevolverUsuarios();
-            let usuarioIniciado = BuscarUsuarioIniciado(usuarios);
+        const botonesAgregarCarrito = document.querySelectorAll(".agregarCarrito");
 
-            if(usuarioIniciado != null && usuarioIniciado.sesionIniciada)
+        botonesAgregarCarrito.forEach(function(boton) 
+        {
+            boton.addEventListener("click", function(event) 
             {
-                alert("Se agrego al carrito.");
-            }
-            else
-            {
-                alert("Debes iniciar sesion para agregar al carrito.");
-            }
+                event.preventDefault();
+
+                let usuarios = DevolverUsuarios(); 
+                let usuarioIniciado = BuscarUsuarioIniciado(usuarios);
+
+                if (usuarioIniciado != null && usuarioIniciado.sesionIniciada) 
+                {
+                    alert("Se agrego al carrito.");
+                } 
+                else 
+                {
+                    alert("Debes iniciar sesión para agregar al carrito.");
+                }
+            });
         });
     });
 }
@@ -103,6 +85,6 @@ function RellenarCorazon()
     });
 }
 
-//VerificarAccionCompra();
+VerificarAccionCompra();
 VerificarAccionAgregarCarrito();
 RellenarCorazon();
