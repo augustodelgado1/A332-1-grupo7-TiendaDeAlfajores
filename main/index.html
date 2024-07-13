@@ -1,4 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -26,6 +25,10 @@
     <link rel="stylesheet" href="productos.css" />
     <link rel="stylesheet" href="nosotros.css" />
     <link rel="icon" href="./img/iconoPestaña.png" type="image/x-icon">
+
+    <script src="./productos.js"></script>
+    <script src="./index.js" defer></script>
+
     <title>Inicio</title>
 </head>
 
@@ -52,7 +55,10 @@
                         <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
                     </span>
                     <span class="spanIcono">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <a href="carrito.html" ><i class="fa-solid fa-shopping-cart" aria-hidden="true"><span id="contadorCarrito"></span>0</i></a>
+                    </span>
+                    <span class="spanIcono">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
                     </span>
                 </div>
             </div>
@@ -88,81 +94,8 @@
             <div class="contenedor">
                 <h2>Nuestros Productos</h2>
 
-                <div class="contenedor-de-productos">
-                    <article class="alfajores-chocolate" title="alfajor de Chocolate">
-
-                        <h3>Alfajor De Chocolate</h3>
-
-                        <p>
-                            Nuestros alfajores están rellenos de un suave y cremoso dulce de leche.
-                            Perfectos para acompañar tu café.
-                        </p>
-
-                        <a href="./alfajores-chocolate.html">
-                            <button class="btn-info" title="Mas Informacion" onclick="mostrarMensaje()">
-                                
-                                Comprar
-                            </button>
-                        </a>
-                    </article>
-
-                    <article class="alfajor-blanco" title="alfajor Blanco">
-
-                        <h3>Alfajor Blanco</h3>
-
-                        <p>Descubre el alfajor de chocolate blanco relleno de dulce de leche
-                            Es una deliciosa combinación de texturas y sabores dulces.
-                        </p>
-
-                        <a href="./alfajores-blanco.html">
-                            <button class="btn-info" title="Mas Informacion">
-                                Comprar
-                            </button>
-                        </a>
-                    </article>
-
-                    <article class="alfajor-fruta" title="alfajores De Fruta">
-
-                        <h3>Alfajor De Fruta</h3>
-
-                        <p>Descubre la magia de un alfajor de fruta, donde dos galletas suaves
-                            abrazan un corazón de mermelada de frutas frescas.
-                        </p>
-
-                        <a href="./alfajores-fruta.html">
-                            <button class="btn-info" title="Mas Informacion">
-                                Comprar
-                            </button>
-                        </a>
-                    </article>
-
-                    <article class="alfajor-maisena" title="alfajor de maisena">
-
-                        <h3>Alfajor De Maicena</h3>
-
-                        <p>Descubre el alfajor de maicena, con su suave relleno de dulce de leche y cobertura de coco
-                            rallado.
-                        </p>
-
-                        <a href="./alfajores-maisena.html">
-                            <button class="btn-info" title="Mas Informacion">
-                                Comprar
-                            </button>
-                        </a>
-                    </article>
-
-                    <article class="alfajor-vegano" title="Alfajor Vegano">
-
-                        <h3>Alfajor Vegano</h3>
-
-                        <p>Prueba nuestro alfajor vegano, elaborado con ingredientes 100% de origen vegetal.</p>
-
-                        <a href="./alfajores-vegano.html">
-                            <button class="btn-info" title="Mas Informacion">
-                                Comprar
-                            </button>
-                        </a>
-                    </article>
+                <div class="contenedor-de-productos" id="contenedor-de-productos">
+                    
                 </div>
             </div>
         </section>
@@ -184,14 +117,6 @@
                             y cuidar, por sobre todo, la relación entre nuestra marca 
                             y nuestro cliente.
                         </p>
-
-                        <p class="parrafo">
-
-                            Es a partir de esta premisa de excelencia que hoy
-                            hemos decidido ofrecer la calidad y frescura de
-                            nuestros productos, y la calidez de nuestros servicios
-                            fuera de la Argentina.
-                        </p>
                     </div>
                 </div>
 
@@ -206,9 +131,6 @@
                             Ofrecer alfajores de alta calidad
                             que capturen el sabor tradicional
                             y auténtico del alfajor argentino.
-
-                            Ser la mejor empresa familiar
-                            de productos alimenticios de BS AS.
                         </p>
                     </div>
 
@@ -272,6 +194,9 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="img/procesoProducto.jpg" class="d-block w-100" alt="Proceso">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/ultimaImagen.jpg" class="d-block w-100" alt="Proceso">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -435,7 +360,7 @@
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="text" id="telefono" placeholder="Telefono" required>
                 <h5>Escribe tu mensaje</h5>
-                <textarea required></textarea>
+                <textarea required id="mensaje"></textarea>
                 <input type="submit" value="Enviar" id="button">
             </form>
         </section>
@@ -482,11 +407,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        function mostrarMensaje(){
-            Swal.fire("SweetAlert2 is working!");
-        }
-    </script>
+    <script src="validador.js"></script>
+    <script src="login.js"></script>
+    <script src="productos.js"></script>
 </body>
 
 </html>
