@@ -74,26 +74,34 @@ function Registrarse()
     { 
         event.preventDefault();
         let usuarios = DevolverUsuarios();
+        let nombre = document.getElementById("txtNombre").value;
+        let apellido = document.getElementById("txtApellido").value;
+        let localidad = document.getElementById("txtLocalidad").value;
+        let email = document.getElementById("txtEmailRegistro").value;
+        let clave = document.getElementById("txtClaveRegistro").value;
 
-        let usuarioARegistrar = {
-            nombre: document.getElementById("txtNombre").value,
-            apellido: document.getElementById("txtApellido").value,
-            localidad: document.getElementById("txtLocalidad").value,
-            email: document.getElementById("txtEmailRegistro").value,
-            clave: document.getElementById("txtClaveRegistro").value,
-            fechaNacimiento: document.getElementById("txtFechaNacimiento").value,
-            sesionIniciada: false
-        };
-        
-        if(VerificarEmail(usuarios,usuarioARegistrar.email) == false)
+        if(VerificarEntradas(nombre, apellido, localidad, email, clave) == true)
         {
-            usuarios.push(usuarioARegistrar);
-            localStorage.setItem("usuarios", JSON.stringify(usuarios));
-            alert("Registro exitoso.");
-        }
-        else
-        {
-            alert("Ese email ya esta siendo usado por otro usuario.");
+            let usuarioARegistrar = {
+                nombre: nombre,
+                apellido: apellido,
+                localidad: localidad,
+                email: email,
+                clave: clave,
+                fechaNacimiento: document.getElementById("txtFechaNacimiento").value,
+                sesionIniciada: false
+            };
+
+            if(VerificarEmail(usuarios, usuarioARegistrar.email) == false)
+            {
+                usuarios.push(usuarioARegistrar);
+                localStorage.setItem("usuarios", JSON.stringify(usuarios));
+                alert("Registro exitoso.");
+            }
+            else
+            {
+                alert("Ese email ya esta siendo usado por otro usuario.");
+            }
         }
     });
 }
