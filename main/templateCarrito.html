@@ -1,0 +1,18 @@
+<div id="template-tarjeta-producto">
+    <article class="tarjeta-producto">
+      <div class="imagen-producto" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{producto.img}}')"></div>
+      <div class="informacion-producto">
+        <h3 id="nombreProducto">NombreProducto</h3>
+        <div class="boton">
+            <label for="btn-cantidad">Cantidad:</label>
+            <input Id='btn-cantidad' type="number" value="1" min="1" max="10" autocomplete="off"
+                step="1" inputmode="numeric">
+        </div>
+        <p>
+            <span class="precio">
+              <strong>$${producto.precio}</strong>
+            </span>
+        </p>
+      </div>
+    </article>
+  </div>
