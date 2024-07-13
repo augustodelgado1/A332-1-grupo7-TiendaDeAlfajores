@@ -32,7 +32,7 @@ function crearPaginaProducto(producto) {
           <p>${producto.descripcion}</p>
           <p>
             <span class="precio">
-              <strong>${producto.precio}</strong>
+              <strong>$${producto.precio}</strong>
             </span>
           </p>
         `;
