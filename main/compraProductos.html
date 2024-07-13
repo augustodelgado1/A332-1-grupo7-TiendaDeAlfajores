@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="nosotros.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="icon" href="./img/iconoPestaña.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./productos.js"></script>
     <script src="compraProductos.js"></script>
     <script src="./carrito.js"></script>
@@ -25,29 +26,32 @@
 
 <body>
     <header>
-        <div class="containerHeader">
-            <div class="logoContainer">
-                <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li class="borde"><a href="./index.html#inicio">INICIO</a></li>
-                    <li class="borde"><a href="./index.html#productos">PRODUCTOS</a></li>
-                    <li class="borde"><a href="./index.html#nosotros">NOSOTROS</a></li>
-                    <li class="borde"><a href="./index.html#novedades">NOVEDADES</a></li>
-                    <li class="borde"><a href="./index.html#contacto">CONTACTO</a></li>
-                </ul>
-            </nav>
+        <section id="header">
+            <div class="containerHeader">
 
-            <div class="botones">
-                <span class="spanIcono">
-                    <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
-                </span>
-                <span class="spanIcono">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                </span>
+                <div class="logoContainer">
+                    <li class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></li>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li class="borde"><a href="#inicio">INICIO</a></li>
+                        <li class="borde"><a href="#nuestros-productos">PRODUCTOS</a></li>
+                        <li class="borde"><a href="#nosotros">NOSOTROS</a></li>
+                        <li class="borde"><a href="#novedades">NOVEDADES</a></li>
+                        <li class="borde"><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </nav>
+
+                <div class="botones">
+                    <span class="spanIcono">
+                        <a href="login.html" ><i class="fa-solid fa-user" aria-hidden="true"></i></a>
+                    </span>
+                    <span class="spanIcono">
+                        <button onclick=mostrarCarrito()><i class="fa-solid fa-shopping-cart" aria-hidden="true"><span id="contadorCarrito"></span>0</i></button>
+                    </span>
+                </div>
             </div>
-        </div>
+        </section>
     </header>
 
     <main>
