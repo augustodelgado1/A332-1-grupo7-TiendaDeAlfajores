@@ -47,5 +47,18 @@ function VerificarAccionAgregarCarrito()
     });
 }
 
-VerificarAccionCompra();
+function RellenarCorazon()
+{
+    const btnFavorito = document.querySelector(".btn-favorito i.fa-regular.fa-heart");
+    
+    btnFavorito.addEventListener("click", function(event) 
+    {
+        event.preventDefault(); 
+        btnFavorito.classList.toggle("fa-regular");
+        btnFavorito.classList.toggle("fas");
+    });
+}
+
+//VerificarAccionCompra();
 VerificarAccionAgregarCarrito();
+RellenarCorazon();
